@@ -1,0 +1,76 @@
+body {
+    border: 5px solid black;
+    padding: 25px;
+    background-image: url(../img/bg.jpg);
+    font-family: "Noto Sans", sans-serif;
+}
+
+header {
+    height: 300px;
+    text-align: center;
+    display: flex;
+    border-bottom: 5px solid black;
+}
+
+header a {
+    text-decoration: none;
+}
+
+figure>img {
+    border: 2px solid grey;
+}
+
+address {
+    padding-top: 20px;
+}
+
+.contacts {
+    margin-top: 25px;
+}
+
+h2 {
+    text-align: center;
+    padding: 100px 0 20px 0;
+    border-bottom: 2px solid grey;
+}
+
+span {
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+}
+
+blockquote {
+    padding-top: 25px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-image: url(../img/sprite-git-fb150.png);
+    margin: auto;
+}
+
+.sprite-fb {
+    background-position: 263px -14px;
+}
+
+.sprite-git {
+    background-position: -5px -14px;
+}
+
+.sprite a {
+    display: flex;
+    height: 100%;
+    border-radius: 75px;
+}
+
+.sprite:hover {
+    transform: scale(1.2);
+}
