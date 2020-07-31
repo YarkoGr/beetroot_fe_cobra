@@ -9,8 +9,12 @@ header {
 }
 
 footer {
-    background-color: black;
+    background-color: #000;
     margin: 30px 0;
+}
+
+main {
+    font-size: 18px;
 }
 
 .main-picture img {
