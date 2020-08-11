@@ -1,0 +1,73 @@
+@import "vars";
+@import "mixins";
+@import "common";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.1s ease-in;
+}
+
+.body-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 143px;
+    text-align: center;
+    p:nth-child(1) {
+        font-size: 12px;
+        font-weight: 700;
+    }
+    h1 {
+        font-size: 48px;
+        padding-top: 35px;
+        color: $main-color;
+    }
+    p:last-child {
+        font-size: 18px;
+        max-width: 513px;
+        margin: 0 auto;
+        padding-top: 44px;
+    }
+}
+
+section {
+    margin-top: 107px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    li {
+        min-width: 25%;
+        height: 420px;
+        text-align: center;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        align-items: center;
+        color: $text-color;
+    }
+    .card-title {
+        font-size: 21px;
+        text-transform: capitalize;
+    }
+    a:hover {
+        fill: $white;
+        background-color: $main-color;
+        color: $white;
+    }
+    svg {
+        margin: 50px 0;
+    }
+    p {
+        padding: 30px 30px 90px 30px;
+        font-size: 14px;
+    }
+}
