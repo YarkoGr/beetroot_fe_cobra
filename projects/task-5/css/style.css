@@ -15,14 +15,15 @@ body {
 .wrapper {
     text-align: center;
     margin: auto;
-    align-items: center;
 }
 
 .logo {
     display: inline-block;
-    width: 112px;
-    height: 36px;
     margin-bottom: 50px;
+}
+
+a {
+    display: flex;
 }
 
 .social-part {
