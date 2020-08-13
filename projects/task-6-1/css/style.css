@@ -16,6 +16,8 @@
 main {
     display: flex;
     justify-content: space-around;
+    height: 100vh;
+    align-items: center;
 }
 
 .icon {
@@ -28,6 +30,7 @@ main {
     align-items: center;
     margin: 0 auto;
     background-color: var(--bg-color);
+    margin-bottom: 20px;
 }
 
 .icon:hover {
@@ -36,17 +39,15 @@ main {
 
 .icon-wrapper {
     max-width: 220px;
-    padding-top: 50px;
     text-align: center;
 }
 
 .icon-title {
-    padding-top: 20px;
     font-size: 25px;
     font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .icon-title+p {
     font-weight: 300;
-    padding-top: 20px;
 }
