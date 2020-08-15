@@ -1,6 +1,7 @@
 @import "vars";
 @import "mixins";
 @import "common";
+
 * {
     margin: 0;
     padding: 0;
@@ -22,67 +23,80 @@ main {
 }
 
 h1 {
-    margin-top: 30px;
-}
-
-.weather-wrapper {
-    margin-top: 30px;
+    padding: 20px;
 }
 
 ul {
     list-style: none;
     font-size: 0;
+    margin-bottom: 20px;
+
     li {
         display: inline-block;
         border: $border-style;
         width: 25%;
         text-align: center;
-        padding: 20px 0;
+        padding: 10px 0;
         font-size: 20px;
     }
+
     li:nth-child(1) {
         background-color: $lisbon-color;
         width: 50%;
     }
+
     li:nth-child(2) {
         background-color: $paris-color;
     }
+
     li:nth-child(3) {
         background-color: $belgrade-color;
     }
+
     li:nth-child(4) {
         background-color: $moskow-color;
     }
+
     li:nth-child(5) {
         background-color: $telaviv-color;
     }
+
     li:nth-child(6) {
         background-color: $cair-color;
     }
+
     li:nth-child(7) {
         background-color: $newyork-color;
     }
+
     li:nth-child(8) {
         background-color: $newdelhi-color;
     }
+
     li:nth-child(9) {
         background-color: $sanfrancisco-color;
         width: 50%;
     }
+
     li:nth-child(10) {
         background-color: $tokio-color;
     }
+
     li:nth-child(11) {
         background-color: $sidney-color;
         width: 100%;
     }
 }
 
+ul:hover li {
+    opacity: 0.5;
+}
+
+ul:hover li:hover {
+    opacity: 1;
+}
+
 .far,
 .fas {
     padding-left: 5px;
-}
-
-footer {
-    margin-top: 30px;
 }
