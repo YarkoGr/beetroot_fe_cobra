@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap");
+
 * {
     transition: all 0.1s ease-in;
     font-family: "Red Rose", cursive;
@@ -8,6 +9,7 @@ header {
     background-color: #4a4f56;
     text-align: center;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 h1+span {
@@ -26,11 +28,11 @@ body {
 ul,
 footer {
     max-width: 500px;
-    margin: 20px auto;
+    margin: auto;
 }
 
 header,
-footer {
+button {
     color: #eb7e7e;
 }
 
@@ -85,8 +87,14 @@ input:checked+span {
     content: ')';
 }
 
-footer {
+article {
+    margin-bottom: 20px;
+}
+
+button {
     background-color: #4a4f56;
-    text-align: center;
+    width: 100%;
+    font-size: 20px;
     padding: 15px 0;
+    cursor: pointer;
 }
