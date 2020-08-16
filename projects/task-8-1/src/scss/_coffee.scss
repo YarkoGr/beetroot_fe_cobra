@@ -1,0 +1,38 @@
+.coffee {
+    background: $body-color;
+    display: flex;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__card-wrapper {
+        background: $white;
+        min-height: 446px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__card-wrapper:nth-child(2) {
+        min-height: 500px;
+    }
+
+    &__card-price {
+        font-size: 70px;
+        color: $price-color;
+        font-weight: bold;
+    }
+
+    &__title {
+        font-size: 70px;
+    }
+
+    &__title-text {
+        font-size: 24px;
+        max-width: 156px;
+        margin: 0 105px;
+        text-align: center;
+    }
+}
