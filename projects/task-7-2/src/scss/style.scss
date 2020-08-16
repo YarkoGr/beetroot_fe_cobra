@@ -17,13 +17,18 @@ body {
     height: 100vh;
 }
 
-main {
-    max-width: 960px;
-    margin: 0 200px;
+h1 {
+    padding: 20px 0;
+    margin: 0 auto;
 }
 
-h1 {
-    padding: 20px;
+section {
+    display: flex;
+}
+
+.weather-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 ul {
@@ -36,7 +41,7 @@ ul {
         border: $border-style;
         width: 25%;
         text-align: center;
-        padding: 10px 0;
+        padding: 15px 0;
         font-size: 20px;
     }
 
