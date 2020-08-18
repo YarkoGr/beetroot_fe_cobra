@@ -1,7 +1,6 @@
 @import "vars";
 @import "mixins";
 @import "common";
-
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +17,7 @@ body {
 }
 
 h1 {
-    padding: 20px 0;
-    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 section {
@@ -29,13 +27,14 @@ section {
 .weather-wrapper {
     max-width: 700px;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 ul {
     list-style: none;
     font-size: 0;
     margin-bottom: 20px;
-
+    background-color: $white;
     li {
         display: inline-block;
         border: $border-style;
@@ -44,49 +43,38 @@ ul {
         padding: 15px 0;
         font-size: 20px;
     }
-
     li:nth-child(1) {
         background-color: $lisbon-color;
         width: 50%;
     }
-
     li:nth-child(2) {
         background-color: $paris-color;
     }
-
     li:nth-child(3) {
         background-color: $belgrade-color;
     }
-
     li:nth-child(4) {
         background-color: $moskow-color;
     }
-
     li:nth-child(5) {
         background-color: $telaviv-color;
     }
-
     li:nth-child(6) {
         background-color: $cair-color;
     }
-
     li:nth-child(7) {
         background-color: $newyork-color;
     }
-
     li:nth-child(8) {
         background-color: $newdelhi-color;
     }
-
     li:nth-child(9) {
         background-color: $sanfrancisco-color;
         width: 50%;
     }
-
     li:nth-child(10) {
         background-color: $tokio-color;
     }
-
     li:nth-child(11) {
         background-color: $sidney-color;
         width: 100%;
@@ -94,11 +82,12 @@ ul {
 }
 
 ul:hover li {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 ul:hover li:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .far,
