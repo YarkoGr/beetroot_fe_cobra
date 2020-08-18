@@ -31,10 +31,13 @@ main {
     margin: 0 auto;
     background-color: var(--bg-color);
     margin-bottom: 20px;
+    fill: var(--white);
 }
 
 .icon:hover {
     background-color: var(--white);
+    fill: var(--bg-color);
+    transition: background-color .1s ease-in;
 }
 
 .icon-wrapper {
