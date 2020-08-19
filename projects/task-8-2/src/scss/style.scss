@@ -1,0 +1,22 @@
+@import "vars";
+@import "mixins";
+@import "common";
+@import "./cards";
+@font-face {
+    font-family: "HansKendrick";
+    src: url(../assets/fonts/NeueHansKendrick-Regular.ttf);
+}
+
+section {
+    background-color: $bg-color;
+    padding-top: 90px;
+}
+
+.spinner-grow {
+    margin-right: 10px;
+}
+
+.text-spinner {
+    font-size: 13px;
+    color: #99A5B0;
+}
