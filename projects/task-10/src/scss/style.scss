@@ -13,18 +13,23 @@
     width: 100%;
     top: 0;
     z-index: -1;
-    &:hover {
-        z-index: 1;
-    }
     .icon-wrap {
         width: 45px;
         height: 45px;
         position: relative;
         margin-right: 5px;
+        cursor: pointer;
     }
 }
 
-// .we-are__list-item-photo:hover {
-//     display: none;
-//     z-index: -1;
-// }
+.social-icon:hover {
+    z-index: 1;
+}
+
+a:hover {
+    z-index: 1;
+}
+
+.we-are__list-item-photo:hover {
+    z-index: -1;
+}
