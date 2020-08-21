@@ -4,11 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
 @import "./_we-are";
 .social-icon {
-    display: none;
-    // display: flex;
+    display: flex;
+    min-height: 270px;
     justify-content: center;
     align-items: center;
     background-color: $bg-card-color;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    &:hover {
+        z-index: 1;
+    }
     .icon-wrap {
         width: 45px;
         height: 45px;
@@ -17,10 +24,7 @@
     }
 }
 
-.we-are__list-item-photo:hover {
-    display: none;
-}
-
-.social-icon:hover {
-    display: flex;
-}
+// .we-are__list-item-photo:hover {
+//     display: none;
+//     z-index: -1;
+// }
