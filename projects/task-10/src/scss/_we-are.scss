@@ -40,6 +40,7 @@
         min-width: calc(100% / 4 - 15px);
         margin-right: 15px;
         position: relative;
+        transition: all 2s ease;
         &:last-child {
             margin-right: 0;
         }
