@@ -7,6 +7,9 @@
     &__item-beginner {
         margin: 0 20px 20px 0;
         min-width: calc(70% - 58px);
+        &:hover {
+            opacity: .8;
+        }
     }
     &__img-beginner {
         min-height: 540px;
@@ -26,8 +29,15 @@
         max-width: calc(100% / 3 - 20px);
         margin-right: 20px;
         margin-bottom: 20px;
+        a {
+            text-decoration: none;
+            color: $black;
+        }
         &:last-child {
             margin-right: 0;
+        }
+        &:hover {
+            opacity: .5;
         }
     }
     &__img-wrapper {
