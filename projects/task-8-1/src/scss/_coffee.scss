@@ -5,7 +5,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     &__card-wrapper {
         background: $white;
         min-height: 446px;
@@ -13,22 +12,20 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        transition: 0.5s ease;
+        &:hover {
+            min-height: 500px;
+            opacity: 0.8;
+        }
     }
-
-    &__card-wrapper:nth-child(2) {
-        min-height: 500px;
-    }
-
     &__card-price {
         font-size: 70px;
         color: $price-color;
         font-weight: bold;
     }
-
     &__title {
         font-size: 70px;
     }
-
     &__title-text {
         font-size: 24px;
         max-width: 156px;
