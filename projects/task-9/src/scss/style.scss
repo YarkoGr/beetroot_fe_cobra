@@ -1,7 +1,6 @@
 @import "vars";
 @import "mixins";
 @import "common";
-
 body {
     background-color: $bg-color;
     padding: 100px 0;
@@ -17,7 +16,6 @@ section {
 .card-wrapper {
     max-width: 940px;
     margin: 0 auto;
-
     a {
         display: inline-block;
         color: $a-color;
@@ -26,6 +24,10 @@ section {
         text-transform: uppercase;
         padding: 28px 75px;
         margin-bottom: 100px;
+        transition: background-color 0.5s ease;
+    }
+    a:hover {
+        background-color: lightgrey;
     }
 }
 
@@ -49,11 +51,9 @@ h1 {
     color: $text-color;
     font-size: 18px;
     line-height: 1.8;
-
     p {
         margin-bottom: 20px;
     }
-
     p:last-child {
         font-size: 26px;
         font-style: italic;
