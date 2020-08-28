@@ -3,27 +3,3 @@
 @import "common";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
 @import "./_we-are";
-.social-icon {
-    display: flex;
-    min-height: 270px;
-    justify-content: center;
-    align-items: center;
-    background-color: $bg-card-color;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    transition: all 0.5s ease-in;
-    .icon-wrap {
-        width: 45px;
-        height: 45px;
-        position: relative;
-        margin-right: 5px;
-        cursor: pointer;
-    }
-}
-
-.we-are__list-item-photo:hover~.social-icon {
-    z-index: 5;
-}
