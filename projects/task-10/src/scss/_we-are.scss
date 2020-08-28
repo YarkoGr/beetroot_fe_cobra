@@ -91,7 +91,10 @@
         margin-right: 5px;
         cursor: pointer;
     }
-    &__list-item-photo:hover~&__social-icon {
+    &__list-item-wrapper:hover &__social-icon {
         z-index: 1;
+    }
+    &__list-item-wrapper:hover &__list-item-photo {
+        z-index: -1;
     }
 }
