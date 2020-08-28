@@ -1,0 +1,25 @@
+.nike {
+    max-width: 800px;
+    margin: 0 auto;
+    background-image: $nike-bg0, $nike-bg1, $nike-bg2, $nike-bg3;
+    padding: 108px 51px 100px 62px;
+    display: flex;
+    &__card-wrapper {
+        min-width: 687px;
+        background: $nike-card-bg;
+        flex: 1;
+    }
+    // &__card-wrapper-left {
+    //     &__logo {}
+    //     &__img {}
+    //     &__color-list {}
+    //     &__color-list-item {}
+    // }
+    // &__card-wrapper-right {
+    //     &__card-title {}
+    //     &__card-subtitle {}
+    //     &__rate {}
+    //     &__filters {}
+    //     &__btn {}
+    // }
+}
