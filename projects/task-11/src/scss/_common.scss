@@ -4,3 +4,13 @@
     box-sizing: border-box;
     font-family: "MuseoSansRounded100";
 }
+
+body,
+html {
+    min-height: 100vh;
+    font-size: 100%;
+}
+
+ul {
+    list-style: none;
+}

@@ -1,25 +1,60 @@
-.nike {
+$style: "nike";
+.#{$style} {
     max-width: 800px;
-    margin: 0 auto;
-    background-image: $nike-bg0, $nike-bg1, $nike-bg2, $nike-bg3;
+    max-height: 600px;
+    margin: auto;
     padding: 108px 51px 100px 62px;
-    display: flex;
     &__card-wrapper {
-        min-width: 687px;
+        display: flex;
         background: $nike-card-bg;
-        flex: 1;
     }
-    // &__card-wrapper-left {
-    //     &__logo {}
-    //     &__img {}
-    //     &__color-list {}
-    //     &__color-list-item {}
-    // }
-    // &__card-wrapper-right {
-    //     &__card-title {}
-    //     &__card-subtitle {}
-    //     &__rate {}
+    &__card-wrapper-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 127px 79px 19px 37px;
+    }
+    &__logo {
+        position: absolute;
+        left: 22px;
+        top: 25px;
+    }
+    &__img {
+        margin-bottom: 72px;
+    }
+    &__card-wrapper-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 79px;
+    }
+    &__card-title {
+        font-size: $font-sz-title;
+        color: $text-color;
+        max-width: 155px;
+        margin-bottom: 16px;
+    }
+    &__card-subtitle {
+        font-size: $font-sz;
+        color: $text-color;
+        margin-bottom: 24px;
+    }
+    &__rate {
+        margin-bottom: 26px;
+    }
     //     &__filters {}
-    //     &__btn {}
-    // }
+    &__btn {
+        font-size: $font-sz;
+        color: $text-color;
+        border: 1px solid $border-btn-color;
+    }
+    &__btn-filters {
+        background-color: $nike-card-bg;
+        width: 70px;
+        height: 33px;
+    }
+    &__btn-add {
+        background-color: $add-btn-color;
+    }
 }

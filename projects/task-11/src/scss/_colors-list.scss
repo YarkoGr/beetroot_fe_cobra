@@ -1,0 +1,34 @@
+$style: "colors-list";
+.#{$style} {
+    display: flex;
+    flex-direction: row;
+    &__item {
+        margin-right: 9px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:nth-of-type(1) .colors-list__item-button {
+            background-color: $first-btn-color;
+        }
+        &:nth-of-type(2) .colors-list__item-button {
+            background-color: $second-btn-color;
+        }
+        &:nth-of-type(3) .colors-list__item-button {
+            background-color: $third-btn-color;
+        }
+        &:nth-of-type(4) .colors-list__item-button {
+            background-color: $fourth-btn-color;
+        }
+    }
+    &__item-button {
+        width: 10px;
+        height: 10px;
+        border: none;
+        border-radius: 50%;
+        &:hover {
+            cursor: pointer;
+            transform: scale(2);
+            border: 1px solid $border-btn-color;
+        }
+    }
+}
