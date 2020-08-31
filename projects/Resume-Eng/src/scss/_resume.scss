@@ -1,0 +1,45 @@
+$style: "resume";
+.#{$style} {
+    margin: 0 auto;
+    max-width: 960px;
+    background-image: url(../img/bg.jpg);
+    position: relative;
+    &__header {
+        display: flex;
+        border-bottom: 1px solid #000;
+        margin-bottom: 50px;
+        padding-left: 30px;
+    }
+    &__photo {
+        display: flex;
+        border: 1px solid #000;
+    }
+    &__personal-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    &__contacts {
+        a {
+            text-decoration: none;
+            color: $black;
+            transition: opacity 0.3s ease;
+        }
+        a:hover {
+            opacity: 0.6;
+        }
+    }
+    &__main {
+        .titles-wrap {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #000;
+            text-align: center;
+            line-height: 2em;
+            padding-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
