@@ -1,9 +1,20 @@
 $style: "nike";
 .#{$style} {
+    margin: 0 auto;
+    background-image: url(../img/layer3.png);
+    background-position: -440px -595px;
+    background-size: auto;
+    background-repeat: no-repeat;
     max-width: 800px;
     max-height: 600px;
-    margin: auto;
-    padding: 108px 51px 100px 62px;
+    &__for-backgrd {
+        max-width: 800px;
+        max-height: 600px;
+        padding: 108px 51px 92px 62px;
+        background-image: url(../img/layer2.png), url(../img/layer1.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
     &__card-wrapper {
         display: flex;
         background: $nike-card-bg;
@@ -48,13 +59,38 @@ $style: "nike";
         font-size: $font-sz;
         color: $text-color;
         border: 1px solid $border-btn-color;
+        transition: opacity .5s ease;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.258;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__filters {
+        margin-bottom: 28px;
     }
     &__btn-filters {
-        background-color: $nike-card-bg;
+        background-color: transparent;
         width: 70px;
         height: 33px;
+        &:after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-bottom: 1px solid $text-color;
+            border-right: 1px solid $text-color;
+            transform: rotate(45deg);
+            position: relative;
+            left: 5px;
+            bottom: 1px;
+        }
     }
     &__btn-add {
         background-color: $add-btn-color;
+        max-width: 185px;
+        padding: 15px 0;
     }
 }
