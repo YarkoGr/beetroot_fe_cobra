@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Title</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="form">
+        <ul class="form__nav">
+            <li class="form__nav-item">
+                <a class="form__nav-item-link" href="#">Sign in</a>
+            </li>
+            <li class="form__nav-item">
+                <a class="form__nav-item-link" href="#">Join us</a>
+            </li>
+        </ul>
+        <form class="form__wrapper" action="#" method="get">
+            <div class="form__username inputs">
+                <label for="username">Username</label>
+                <input type="text" name="username" minlength="3" id="username">
+                <div class="form__error">error</div>
+            </div>
+            <div class="form__user-passwd inputs">
+                <label for="passwd">Password</label>
+                <input type="password" name="passwd" minlength="5" id="passwd">
+                <div class="form__error">error</div>
+            </div>
+            <div class="form__checkbox-mod">
+                <label for="check"><span>&#10004;</span></label>
+                <input type="checkbox" name="check" id="check">
+            </div>
+        </form>
+    </div>
+    <script src="js/bundle.js"></script>
+</body>
+
+</html>
