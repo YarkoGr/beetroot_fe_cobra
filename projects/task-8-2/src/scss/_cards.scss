@@ -1,82 +1,104 @@
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    max-width: 1120px;
-    margin: 0 auto;
-    &__item-beginner {
-        margin: 0 20px 20px 0;
-        min-width: calc(70% - 58px);
-        transition: opacity .2s ease;
-        &:hover {
-            opacity: .8;
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding-top: 30px;
+        &__item-beginner {
+            margin: 0 20px 20px 0;
+            min-width: calc(70% - 58px);
+            transition: opacity .2s ease;
+            position: relative;
+            &:hover {
+                opacity: .8;
+            }
         }
-    }
-    &__img-beginner {
-        min-height: 540px;
-        position: relative;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        &__title--beginner {
             position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
+            bottom: 40px;
+            left: 44px;
+            color: $white;
+            max-width: 443px;
+            line-height: 1;
         }
-    }
-    &__item {
-        max-width: calc(100% / 3 - 20px);
-        margin-right: 20px;
-        margin-bottom: 20px;
-        transition: opacity .2s ease;
-        a {
-            text-decoration: none;
-            color: $black;
+        &__title-date--beginner {
+            display: block;
+            font-size: $secondary-font;
+            margin-bottom: 23px;
         }
-        &:last-child {
-            margin-right: 0;
+        &__title-text-beginner {
+            font-size: $large-font;
+            font-weight: 700;
+            letter-spacing: 2.5px;
         }
-        &:hover {
-            opacity: .5;
+        &__img-beginner {
+            min-height: 540px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
         }
-    }
-    &__img-wrapper {
-        min-height: 250px;
-        position: relative;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        &__item {
+            max-width: calc(100% / 3 - 20px);
+            margin-right: 20px;
+            margin-bottom: 20px;
+            transition: opacity .2s ease;
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+            &:last-child,
+            &:nth-child(2) {
+                margin-right: 0;
+            }
+            &:hover {
+                opacity: .5;
+            }
+        }
+        &__img-wrapper {
+            min-height: 250px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        &__title {
+            background-color: $white;
+            padding: 62px 26px 25px 26px;
+            position: relative;
+        }
+        &__title-date {
+            font-size: $secondary-font;
             position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
+            top: 20px;
+        }
+        &__title-text {
+            display: block;
+            font-size: $primary-font;
+            margin-bottom: 50px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+        &__title-icon {
+            width: 54px;
+            height: 54px;
+        }
+        &__spiner {
+            margin-bottom: 0;
         }
     }
-    &__title {
-        background-color: $white;
-        padding: 62px 26px 25px 26px;
-        position: relative;
-    }
-    &__title-date {
-        font-size: $secondary-font;
-        position: absolute;
-        top: 20px;
-    }
-    &__title-text {
-        font-size: $primary-font;
-        margin-bottom: 50px;
-        font-weight: bold;
-        letter-spacing: 1.5px;
-    }
-    &__title-icon {
-        width: 54px;
-        height: 54px;
-    }
-    &__spiner {
-        margin-bottom: 0;
-    }
-}

@@ -1,0 +1,50 @@
+    $style: "form";
+    .#{$style} {
+        min-width: 400px;
+        margin: 0 auto;
+        background: linear-gradient(45deg, rgba(45, 32, 168, 1) 0%, rgba(45, 32, 168, 1) 15%, rgba(200, 115, 217, 1) 77%, rgba(200, 115, 217, 1) 100%);
+        padding: 54px 70px 120px 70px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            background-image: url(../img/bridge.png);
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            opacity: 0.2;
+            background-position: -57px;
+        }
+        &__nav {
+            list-style: none;
+            display: flex;
+            margin-bottom: 51px;
+        }
+        &__nav-item-link {
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: $main-font-size;
+            font-weight: $font-bold;
+            outline: none;
+            &:hover,
+            &:focus {
+                border-bottom: 3px solid $border-color;
+            }
+        }
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            input {
+                min-height: 43px;
+                border: 1px solid $border-input-color;
+                background: transparent;
+                outline: none;
+            }
+        }
+        // &__wrapper {
+        //     display: flex;
+        //     flex-direction: column;
+        // }
+    }

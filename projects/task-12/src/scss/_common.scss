@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: $text-color;
 }
 
 html,
@@ -11,4 +12,8 @@ body {
 
 body {
     font-size: 100%;
+    font-family: $font-main;
+    background: url(../img/background1X.png);
+    display: flex;
+    align-items: center;
 }
