@@ -1,16 +1,18 @@
 .coffee {
-    background: $body-color;
+    max-width: 1135px;
+    margin: 0 auto;
     display: flex;
-    padding: 80px 0;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
     height: 100vh;
     &__card-wrapper {
-        width: calc(100% / 3 - 30px);
+        min-width: 360px;
+        min-height: 441px;
         background: $white;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        padding-top: 27px;
         transition: 0.3s ease-out;
         border-radius: 1%;
         &:hover {
@@ -21,16 +23,29 @@
     &__card-price {
         font-size: 70px;
         color: $price-color;
-        font-weight: bold;
+        font-weight: 700;
         font-family: $font-miso;
+        letter-spacing: -6px;
+        margin-bottom: 10px;
+        margin-left: -10px;
+    }
+    &__level {
+        margin-bottom: 23px;
+        transform: translateX(10px);
     }
     &__title {
-        font-size: 70px;
-        font-family: $font-miso;
-    }
-    &__title-text {
-        max-width: 156px;
-        font-size: 24px;
+        max-width: 173px;
         text-align: center;
+    }
+    &__title-main {
+        display: block;
+        font-size: 58px;
+        font-family: $font-miso;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin-bottom: 16px;
+    }
+    &__title-subtitle {
+        font-size: 21px;
     }
 }
