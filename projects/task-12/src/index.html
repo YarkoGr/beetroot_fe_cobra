@@ -11,35 +11,40 @@
 
 <body>
     <div class="form">
-        <ul class="form__nav">
-            <li class="form__nav-item">
-                <a class="form__nav-item-link" href="#">Sign in</a>
-            </li>
-            <li class="form__nav-item">
-                <a class="form__nav-item-link" href="#">Join us</a>
-            </li>
-        </ul>
-        <form class="form__wrapper" action="#" method="get">
-            <div class="form__username inputs">
-                <label for="username">Username</label>
-                <input type="text" name="username" minlength="3" id="username">
-                <div class="form__error">error</div>
-            </div>
-            <div class="form__user-passwd inputs">
-                <label for="passwd">Password</label>
-                <input type="password" name="passwd" minlength="5" id="passwd">
-                <div class="form__error">error</div>
-            </div>
-            <div class="form__checkbox-mod">
-                <label for="check"><span>&#10004;</span></label>
-                <input type="checkbox" name="check" id="check">
-            </div>
-            <button class="sign" type="submit">Sign in</button>
-            <ul class="form__futer">
-                <li class="form__futer-item">Forgot password</li>
-                <li class="form__futer-item">Create an account</li>
+        <div class="form__container">
+            <ul class="form__nav">
+                <li class="form__nav-item">
+                    <a class="form__nav-item-link" href="#">Sign in</a>
+                </li>
+                <li class="form__nav-item">
+                    <a class="form__nav-item-link" href="#">Join us</a>
+                </li>
             </ul>
-        </form>
+            <form class="form__wrapper" action="#" method="get">
+                <div class="form__username inputs">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" minlength="3" id="username">
+                    <div class="form__error">error</div>
+                </div>
+                <div class="form__user-passwd inputs">
+                    <label for="passwd">Password</label>
+                    <input type="password" name="passwd" minlength="5" id="passwd">
+                    <div class="form__error">error</div>
+                </div>
+                <div class="form__checkbox-mod">
+                    <input checked type="checkbox" name="check" id="check">
+                    <label class="form__checkbox-mod-label" for="check"><span class="form__mod-icon">&#10004;</span>Keep
+                        me signed in</label>
+                </div>
+                <button class="form__sign" type="submit">Sign in</button>
+                <ul class="form__futer">
+                    <li class="form__futer-item"><a href="#">Forgot password</a>
+                    </li>
+                    <li class="form__futer-item"><a href="#">Create an account</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
     </div>
     <script src="js/bundle.js"></script>
 </body>
