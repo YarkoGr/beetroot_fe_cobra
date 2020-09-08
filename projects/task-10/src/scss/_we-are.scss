@@ -2,7 +2,7 @@
     &__container {
         max-width: 1170px;
         margin: 0 auto;
-        padding-top: 108px;
+        padding: 100px 0;
     }
     &__head {
         text-align: center;
@@ -15,11 +15,11 @@
             margin-bottom: 64px;
             font-size: $main-fz;
             &::after {
-                content: '';
+                content: "";
                 display: inline-block;
                 width: 46px;
                 height: 5px;
-                background-color: #DDDBDB;
+                background-color: #dddbdb;
                 position: absolute;
                 bottom: -19px;
                 left: 50%;
@@ -34,7 +34,6 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 118px;
     }
     &__list-item {
         min-width: calc(100% / 4 - 15px);
@@ -60,8 +59,10 @@
         }
     }
     &__list-item-title {
-        min-height: 50px;
         color: $text-second-color;
+        span {
+            display: block;
+        }
     }
     &__list-item-title-name {
         font-size: 18px;
@@ -88,9 +89,24 @@
         position: relative;
         margin-right: 5px;
         cursor: pointer;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     &__list-item-wrapper:hover &__social-icon {
         z-index: 1;
         opacity: 1;
+    }
+    @media screen and (max-width: 860px) {
+        &__list-item {
+            min-width: calc(100% / 3 - 15px);
+            margin-bottom: 20px;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        &__list-item {
+            min-width: calc(100% / 2 - 15px);
+            margin-bottom: 20px;
+        }
     }
 }
