@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lato", sans-serif;
 }
 
 html,
 body {
     min-height: 100vh;
+    font-size: 100%;
 }
 
-body {
-    font-size: 100%;
-    background-color: yellow;
+a {
+    display: inline-block;
 }

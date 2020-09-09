@@ -1,0 +1,68 @@
+$style: "sections";
+.#{$style} {
+    @include flex(center, center, column);
+    &__wrapper {
+        min-width: 900px;
+        text-align: center;
+        border: 2px solid $text-color;
+        color: $text-color;
+    }
+    &__about-us {
+        min-height: 450px;
+    }
+    h2 {
+        font-size: $font-size-title;
+        background-color: inherit;
+        max-width: 419px;
+        margin: 0 auto;
+        transform: translateY(-22px);
+        background-color: $white;
+        text-align: center;
+    }
+    &__wrapper-text {
+        max-width: 540px;
+        margin: 0 auto;
+        span {
+            display: block;
+            margin-bottom: 29px;
+        }
+    }
+    &__services {
+        min-height: 450px;
+        background: url(../img/services.png) 100% 100% no-repeat;
+        background-size: cover;
+    }
+    &__wrapper--services {
+        border-top: none;
+        border-color: $white;
+        h2 {
+            background: inherit;
+            color: $white;
+            position: relative;
+        }
+        h2:before,
+        h2:after {
+            content: "";
+            width: 240px;
+            height: 2px;
+            background-color: $white;
+            display: inline-block;
+            position: absolute;
+        }
+        h2:before {
+            left: -240px;
+            bottom: 17px;
+        }
+        h2:after {
+            right: -240px;
+            bottom: 17px;
+        }
+    }
+    &__wrapper-text-services {
+        color: $white;
+        line-height: 29px;
+    }
+    &__we-do {
+        min-height: 1414px;
+    }
+}
