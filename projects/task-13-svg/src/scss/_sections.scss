@@ -1,14 +1,14 @@
 $style: "sections";
 .#{$style} {
-    @include flex(center, center, column);
     &__wrapper {
-        min-width: 900px;
+        max-width: 900px;
+        margin: 0 auto;
         text-align: center;
         border: 2px solid $text-color;
         color: $text-color;
     }
     &__about-us {
-        min-height: 450px;
+        padding: 145px 0 150px;
     }
     h2 {
         font-size: $font-size-title;
@@ -28,9 +28,9 @@ $style: "sections";
         }
     }
     &__services {
-        min-height: 450px;
         background: url(../img/services.png) 100% 100% no-repeat;
         background-size: cover;
+        padding: 127px 0 109px;
     }
     &__wrapper--services {
         border-top: none;
@@ -63,6 +63,6 @@ $style: "sections";
         line-height: 29px;
     }
     &__we-do {
-        min-height: 1414px;
+        padding: 114px 0 105px;
     }
 }

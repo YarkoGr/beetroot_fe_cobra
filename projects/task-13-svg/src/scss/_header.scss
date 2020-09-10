@@ -2,11 +2,12 @@ $style: "header";
 .#{$style} {
     background: url(../img/header-bg.png) 100% 100% no-repeat;
     background-size: cover;
-    text-align: center;
-    padding-top: 183px;
-    @include flex(center, center, column);
-    text-transform: uppercase;
-    position: relative;
+    min-height: 100vh;
+    @include flex(center, center);
+    &__wrapper {
+        text-align: center;
+        @include flex(center, center, column);
+    }
     &__logo {
         margin-bottom: 53px;
     }
@@ -14,19 +15,13 @@ $style: "header";
         @include text($font-big, 700);
         max-width: 597px;
         letter-spacing: 8.74px;
-        text-align: center;
-        white-space: pre-wrap;
         margin-bottom: 37px;
     }
     &__header-span {
         max-width: 580px;
         @include text($font-text, $white);
         line-height: 29px;
-        margin-bottom: 245px;
-    }
-    &__img-scroll {
-        margin-bottom: 82px;
-        cursor: pointer;
+        margin-bottom: 120px;
     }
     &__scroll-text {
         color: $white;
@@ -35,7 +30,7 @@ $style: "header";
         opacity: 0;
         transition: 0.5s ease;
     }
-    &__img-scroll:hover+&__scroll-text {
+    a:hover+&__scroll-text {
         opacity: 1;
     }
 }
