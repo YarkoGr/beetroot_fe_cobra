@@ -51,10 +51,32 @@ $style: "nike";
         color: $text-color;
         margin-bottom: 24px;
     }
-    &__rate {
+    &__rate-list {
+        list-style: none;
+        display: flex;
         margin-bottom: 26px;
     }
-    //     &__filters {}
+    &__rate-list-item {
+        display: block;
+        width: 15px;
+        margin-right: 5px;
+        fill: $white;
+        &:hover {
+            opacity: 0.23;
+        }
+        &:nth-child(1) {
+            fill: $star-color;
+        }
+        &:nth-child(2) {
+            fill: $star-color;
+        }
+        &:nth-child(3) {
+            fill: $star-color;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
     &__btn {
         font-size: $font-sz;
         color: $text-color;
@@ -72,7 +94,7 @@ $style: "nike";
         margin-bottom: 28px;
     }
     &__btn-filters {
-        background-color: transparent;
+        background-color: $add-btn-color;
         width: 70px;
         height: 33px;
         &:after {
