@@ -1,68 +1,122 @@
 $style: "sections";
 .#{$style} {
+    text-align: center;
     &__wrapper {
         max-width: 900px;
         margin: 0 auto;
         text-align: center;
-        border: 2px solid $text-color;
+        border-bottom: 2px solid $text-color;
+        border-right: 2px solid $text-color;
+        border-left: 2px solid $text-color;
         color: $text-color;
+        padding: 50px 0 50px;
+        span {
+            display: block;
+            max-width: 550px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        span:last-child {
+            margin-bottom: 0;
+        }
     }
     &__about-us {
         padding: 145px 0 150px;
+        line-height: 1.5;
     }
-    h2 {
-        font-size: $font-size-title;
-        background-color: inherit;
-        max-width: 419px;
+    &__title {
+        @include text($font-size-title, 700, $text-color);
+        max-width: 420px;
         margin: 0 auto;
-        transform: translateY(-22px);
-        background-color: $white;
-        text-align: center;
-    }
-    &__wrapper-text {
-        max-width: 540px;
-        margin: 0 auto;
-        span {
-            display: block;
-            margin-bottom: 29px;
+        letter-spacing: 5.1px;
+        text-transform: uppercase;
+        position: relative;
+        transform: translateY(20px);
+        &:before,
+        &:after {
+            content: "";
+            width: 240px;
+            height: 2px;
+            background-color: $text-color;
+            display: inline-block;
+            position: absolute;
+        }
+        &:before {
+            top: 50%;
+            left: -240px;
+        }
+        &:after {
+            top: 50%;
+            right: -240px;
         }
     }
     &__services {
         background: url(../img/services.png) 100% 100% no-repeat;
-        background-size: cover;
         padding: 127px 0 109px;
     }
-    &__wrapper--services {
-        border-top: none;
-        border-color: $white;
-        h2 {
-            background: inherit;
-            color: $white;
-            position: relative;
-        }
-        h2:before,
-        h2:after {
-            content: "";
-            width: 240px;
-            height: 2px;
+    &__title-services {
+        color: white;
+        &::before,
+        &::after {
             background-color: $white;
-            display: inline-block;
-            position: absolute;
-        }
-        h2:before {
-            left: -240px;
-            bottom: 17px;
-        }
-        h2:after {
-            right: -240px;
-            bottom: 17px;
         }
     }
-    &__wrapper-text-services {
+    &__wrapper-services {
+        border-color: $white;
         color: $white;
-        line-height: 29px;
+        line-height: 1.62;
+        padding: 79px 0 30px;
     }
     &__we-do {
-        padding: 114px 0 105px;
+        padding: 119px 0 114px;
+    }
+    &__wrapper-we-do {
+        padding: 125px 0 92px;
+    }
+    &__we-do-item {
+        margin-bottom: 110px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__we-do-icon {
+        margin-bottom: 39px;
+        transition: .5s ease;
+        &:hover {
+            opacity: .5;
+        }
+    }
+    &__we-do-subtitle {
+        @include text($font-size-icons, 700, $text-color);
+        letter-spacing: 3.20px;
+        margin-bottom: 37px;
+    }
+    &__we-do-text {
+        line-height: 1.85;
+    }
+    &__contact-us {
+        padding-top: 137px;
+    }
+    &__wrapper-contact-us {
+        padding: 77px 0 55px;
+        span {
+            line-height: 1.62;
+            margin-bottom: 42px;
+        }
+        button {
+            min-width: 395px;
+            background-color: $text-color;
+            border: none;
+            padding: 24px 0;
+            letter-spacing: 2.56px;
+            color: $white;
+            text-transform: uppercase;
+            transition: 0.5s ease;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.9;
+                transform: scale(1.05);
+            }
+        }
     }
 }

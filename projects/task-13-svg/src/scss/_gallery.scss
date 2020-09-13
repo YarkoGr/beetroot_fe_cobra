@@ -1,0 +1,63 @@
+        $style: "gallery";
+        .#{$style} {
+            &__list {
+                @include flex($wrap: wrap);
+                list-style: none;
+            }
+            &__list-item {
+                width: 30%;
+                min-height: 237px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                transition: .5s ease;
+                &:hover {
+                    opacity: .7;
+                }
+                a {
+                    display: flex;
+                    height: 100%;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    @include text($font-size-title, 700);
+                    position: relative;
+                }
+                &:nth-child(1) {
+                    background-image: url(../img/bg-topworks.png);
+                }
+                &:nth-child(2) {
+                    background-image: url(../img/bg-joint.png);
+                }
+                &:nth-child(3) {
+                    background-image: url(../img/bg-market.png);
+                }
+                &:nth-child(4) {
+                    background-image: url(../img/bg-worktop.png);
+                }
+                &:nth-child(5) {
+                    background-image: url(../img/bg-lable.png);
+                }
+                &:nth-child(6) {
+                    background-image: url(../img/bg-kyiv.png);
+                }
+                &:nth-child(2),
+                &:nth-child(5) {
+                    flex-grow: 2;
+                }
+                &:nth-of-type(3n+3) {
+                    margin-right: 0;
+                }
+                &:nth-of-type(1n+4) {
+                    margin-bottom: 0;
+                }
+            }
+            &__list-item-title {
+                position: absolute;
+                bottom: 42px;
+                left: 49px;
+                letter-spacing: 5.44px;
+                transition: color 0.5s ease;
+            }
+            &__list-item:hover &__list-item-title {
+                color: $text-color;
+            }
+        }
