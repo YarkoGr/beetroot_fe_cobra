@@ -52,6 +52,7 @@ $style: "sections";
     }
     &__services {
         background: url(../img/services.png) 100% 100% no-repeat;
+        background-size: cover;
         padding: 127px 0 109px;
     }
     &__title-services {
