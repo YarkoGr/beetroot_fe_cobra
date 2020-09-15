@@ -15,7 +15,7 @@ $style: "card-team";
         margin-bottom: 45px;
     }
     &__team-logo {
-        display: block;
+        display: flex;
         position: relative;
         &::before,
         &::after {

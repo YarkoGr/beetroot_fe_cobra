@@ -1,5 +1,6 @@
 $style: "card-team-descript";
 .#{$style} {
+    border-left: 2px solid $team-color;
     @include flex(center, center, column);
     span {
         display: block;
