@@ -1,0 +1,24 @@
+$style: "card-team-footer";
+.#{$style} {
+    padding: 20px 0 94px;
+    @include flex (center);
+    &__button {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        margin-right: 5px;
+        border: none;
+        background-color: $team-color;
+        outline: none;
+        transition: .2s ease;
+        &:last-child {
+            margin: 0;
+        }
+        &:hover,
+        &:focus {
+            border: 1px solid $team-color;
+            background-color: inherit;
+            transform: scale(1.3);
+        }
+    }
+}
