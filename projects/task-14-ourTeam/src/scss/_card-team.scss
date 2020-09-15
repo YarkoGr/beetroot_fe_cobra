@@ -1,0 +1,65 @@
+$style: "card-team";
+.#{$style} {
+    &__header {
+        @include flex(center, center, column);
+        padding-top: 115px;
+        margin-bottom: 39px;
+    }
+    &__header-subtitle {
+        @include text($midle-fsz, 400, $title-color);
+        margin-bottom: 18px;
+    }
+    &__header-title {
+        @include text($big-fsz, 700, $team-color);
+        font-family: $font-roboto;
+        margin-bottom: 45px;
+    }
+    &__team-logo {
+        display: block;
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            width: 212px;
+            height: 2px;
+            position: absolute;
+            background-color: $team-color;
+            display: inline-block;
+            bottom: 50%;
+            transform: translateY(-1px);
+        }
+        &::before {
+            right: 30px;
+        }
+        &::after {
+            left: 30px;
+        }
+    }
+    &__card-wrapper {
+        @include flex();
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-top: 2px solid $team-color;
+            border-left: 2px solid $team-color;
+            bottom: calc(50% - 10px);
+            cursor: pointer;
+        }
+        &::before {
+            transform: rotate(-45deg);
+            left: -15px;
+        }
+        &::after {
+            transform: rotate(135deg);
+            right: -15px;
+        }
+    }
+    &__card-wrapper-item {
+        min-width: 50%;
+        min-height: 561px;
+    }
+}

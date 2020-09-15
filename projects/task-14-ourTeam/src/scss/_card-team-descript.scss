@@ -1,0 +1,84 @@
+$style: "card-team-descript";
+.#{$style} {
+    @include flex(center, center, column);
+    span {
+        display: block;
+    }
+    &__title {
+        @include text($title-fsz, 700, $text-color);
+        font-family: $font-roboto;
+        margin-bottom: 68px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100px;
+            height: 2px;
+            background-color: $team-color;
+            bottom: -33px;
+            left: 50%;
+            transform: translateX(-50px);
+        }
+    }
+    &__subtitle {
+        @include text($subtitle-fsz, 400, $text-color);
+        margin-bottom: 28px;
+    }
+    &__social-list {
+        list-style: none;
+        margin-bottom: 30px;
+        @include flex();
+        a {
+            display: flex;
+            transition: transform 0.2s ease-in;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    &__social-list-item {
+        margin-right: 3px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__text {
+        @include text($text-fsz, 400, $text-second-color);
+        max-width: 416px;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+    &__dashed-line {
+        width: 20px;
+        height: 4px;
+        background-color: $team-color;
+        margin-bottom: 26px;
+        position: relative;
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 4px;
+            background-color: $team-color;
+        }
+        &::before {
+            left: -15px;
+        }
+        &::after {
+            right: -15px;
+        }
+    }
+    &__button {
+        @include text($text-fsz, 700, $text-color);
+        font-family: $font-open-sans;
+        min-width: 120px;
+        border: 1px solid $team-color;
+        padding: 6px 0;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in;
+        &:hover {
+            background-color: $team-color;
+        }
+    }
+}

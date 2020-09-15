@@ -1,0 +1,12 @@
+@import "vars";
+@import "mixins";
+@import "common";
+@import "./card-team";
+@import "./card-team-descript.scss";
+@import "./photo-wrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500&family=Roboto:wght@900&display=swap');
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
