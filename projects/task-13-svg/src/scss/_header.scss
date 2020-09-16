@@ -16,6 +16,9 @@ $style: "header";
         max-width: 597px;
         letter-spacing: 8.74px;
         margin-bottom: 37px;
+        span {
+            letter-spacing: 19px;
+        }
     }
     &__header-span {
         max-width: 580px;
@@ -29,8 +32,26 @@ $style: "header";
         bottom: 20px;
         opacity: 0;
         transition: 0.5s ease;
+        font-size: $font-size-title;
     }
     a:hover+&__scroll-text {
         opacity: 1;
+    }
+    &__img-scroll {
+        animation: pulsing 2s infinite;
+    }
+    @keyframes pulsing {
+        0% {
+            transform: scale(0.5, 0.5);
+            opacity: 0.1;
+        }
+        50% {
+            transform: scale(1.0, 1.0);
+            opacity: 0.9;
+        }
+        100% {
+            transform: scale(0.5, 0.5);
+            opacity: 0.1;
+        }
     }
 }
