@@ -10,6 +10,23 @@ $style: "sections";
         border-left: 2px solid $text-color;
         color: $text-color;
         padding: 50px 0 50px;
+        position: relative;
+        &:before,
+        &:after {
+            content: "";
+            width: 240px;
+            height: 2px;
+            background-color: $text-color;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+        }
+        &:before {
+            left: 0px;
+        }
+        &:after {
+            right: 0px;
+        }
         span {
             display: block;
             max-width: 550px;
@@ -26,77 +43,10 @@ $style: "sections";
     }
     &__title {
         @include text($font-size-title, 700, $text-color);
-        max-width: 420px;
-        margin: 0 auto;
+        // margin: 0 auto;
         letter-spacing: 5.1px;
         text-transform: uppercase;
-        position: relative;
         transform: translateY(20px);
-        &:before,
-        &:after {
-            content: "";
-            width: 240px;
-            height: 2px;
-            background-color: $text-color;
-            display: inline-block;
-            position: absolute;
-        }
-        &:before {
-            top: 50%;
-            left: -240px;
-        }
-        &:after {
-            top: 50%;
-            right: -240px;
-        }
-    }
-    &__services {
-        background: url(../img/services.png) 100% 100% no-repeat;
-        background-size: cover;
-        padding: 127px 0 109px;
-    }
-    &__title-services {
-        color: white;
-        &::before,
-        &::after {
-            background-color: $white;
-        }
-    }
-    &__wrapper-services {
-        border-color: $white;
-        color: $white;
-        line-height: 1.62;
-        padding: 79px 0 30px;
-    }
-    &__we-do {
-        padding: 119px 0 114px;
-    }
-    &__wrapper-we-do {
-        padding: 125px 0 92px;
-    }
-    &__we-do-item {
-        margin-bottom: 110px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    &__we-do-icon {
-        margin-bottom: 39px;
-        transition: .5s ease;
-        &:hover {
-            opacity: .5;
-        }
-    }
-    &__we-do-subtitle {
-        @include text($font-size-icons, 700, $text-color);
-        letter-spacing: 3.20px;
-        margin-bottom: 37px;
-    }
-    &__we-do-text {
-        line-height: 1.85;
-    }
-    &__contact-us {
-        padding-top: 137px;
     }
     &__wrapper-contact-us {
         padding: 77px 0 55px;
@@ -105,10 +55,10 @@ $style: "sections";
             margin-bottom: 42px;
         }
         button {
-            min-width: 395px;
+            min-height: 58px;
             background-color: $text-color;
             border: none;
-            padding: 24px 0;
+            padding: 0 137px;
             letter-spacing: 2.56px;
             color: $white;
             text-transform: uppercase;

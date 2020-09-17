@@ -1,0 +1,28 @@
+$style: "we-do";
+.#{$style} {
+    padding: 119px 0 114px;
+    &__wrapper {
+        padding: 125px 0 92px;
+    }
+    &__item {
+        margin-bottom: 110px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__icon {
+        margin-bottom: 39px;
+        transition: .5s ease;
+        &:hover {
+            opacity: .5;
+        }
+    }
+    &__subtitle {
+        @include text($font-size-icons, 700, $text-color);
+        letter-spacing: 3.20px;
+        margin-bottom: 37px;
+    }
+    &__text {
+        line-height: 1.85;
+    }
+}

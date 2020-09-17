@@ -1,0 +1,27 @@
+$style: "contact-us";
+.#{$style} {
+    padding-top: 137px;
+    &__wrapper {
+        padding: 77px 0 55px;
+        span {
+            line-height: 1.62;
+            margin-bottom: 42px;
+        }
+        button {
+            min-height: 58px;
+            background-color: $text-color;
+            border: none;
+            padding: 0 137px;
+            letter-spacing: 2.56px;
+            color: $white;
+            text-transform: uppercase;
+            transition: 0.5s ease;
+            &:hover {
+                cursor: pointer;
+                background: $white;
+                border: 1px solid $text-color;
+                color: $text-color;
+            }
+        }
+    }
+}

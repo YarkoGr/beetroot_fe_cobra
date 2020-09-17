@@ -1,6 +1,6 @@
 $style: "header";
 .#{$style} {
-    background: url(../img/header-bg.png) 100% 100% no-repeat;
+    background: url(../img/header-bg.png) center no-repeat;
     background-size: cover;
     min-height: 100vh;
     @include flex(center, center);
