@@ -38,6 +38,7 @@ $style: "nike";
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         padding-top: 79px;
     }
     &__card-title {
@@ -95,24 +96,13 @@ $style: "nike";
     }
     &__btn-filters {
         background-color: $add-btn-color;
-        width: 70px;
+        min-width: 70px;
         height: 33px;
-        &:after {
-            content: "";
-            width: 8px;
-            height: 8px;
-            display: inline-block;
-            border-bottom: 1px solid $text-color;
-            border-right: 1px solid $text-color;
-            transform: rotate(45deg);
-            position: relative;
-            left: 5px;
-            bottom: 1px;
-        }
     }
     &__btn-add {
+        display: block;
         background-color: $add-btn-color;
-        max-width: 185px;
-        padding: 15px 0;
+        min-height: 41px;
+        padding: 0 55px;
     }
 }
