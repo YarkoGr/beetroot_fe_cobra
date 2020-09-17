@@ -3,6 +3,11 @@ $style: "header";
     background: url(../img/header-bg.png) center no-repeat;
     background-size: cover;
     min-height: 100vh;
+    @media screen and (min-width: 540px) {
+        &__header-span {
+            margin: 0;
+        }
+    }
     @include flex(center, center);
     &__wrapper {
         text-align: center;
@@ -13,19 +18,20 @@ $style: "header";
     }
     h1 {
         @include text($font-big, 700);
-        max-width: 597px;
         letter-spacing: 8.74px;
         margin-bottom: 37px;
         text-transform: uppercase;
         span {
-            letter-spacing: 19px;
+            letter-spacing: 8.64px;
+            display: block;
         }
     }
     &__header-span {
         max-width: 580px;
-        @include text($font-text, $white);
+        @include text($font-text, 400, $white);
         line-height: 29px;
         margin-bottom: 120px;
+        margin: 0 20px;
     }
     &__scroll-text {
         color: $white;
