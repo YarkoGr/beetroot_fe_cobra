@@ -1,0 +1,53 @@
+    $style: "photo-wrap";
+    .#{$style} {
+        @include flex(center, center);
+        &__inner {
+            display: flex;
+            position: relative;
+            img {
+                display: block;
+                border: 1px solid $team-color;
+            }
+            &::before,
+            &::after {
+                content: '';
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                position: absolute;
+                border-top: 1px solid $team-color;
+                border-left: 1px solid $team-color;
+                top: -14px;
+            }
+            &::before {
+                left: -14px;
+            }
+            &::after {
+                right: -14px;
+                transform: rotate(90deg);
+            }
+        }
+        &__inner-bottom-corners {
+            display: flex;
+            position: relative;
+            &::before,
+            &::after {
+                content: '';
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                position: absolute;
+                border-top: 1px solid $team-color;
+                border-left: 1px solid $team-color;
+                bottom: -14px;
+            }
+            &::before {
+                left: -14px;
+                transform: rotate(-90deg);
+            }
+            &::after {
+                right: -14px;
+                transform: rotate(180deg);
+            }
+        }
+    }

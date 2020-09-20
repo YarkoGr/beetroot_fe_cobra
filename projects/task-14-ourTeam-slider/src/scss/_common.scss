@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    font-size: 100%;
+}
+
+a {
+    display: inline-block;
+}
+
+.uk-position-relative {
+    margin-bottom: 50px;
+}
+
+.uk-slider-nav a {
+    background-color: $team-color;
+    border-color: $team-color;
+}
+
+.uk-slider-nav a:focus {
+    background-color: $white;
+    border-color: $team-color;
+}
+
+.uk-dotnav>.uk-active>* {
+    background-color: $white;
+    border-color: $team-color;
+}
+
+.uk-dotnav>*>:hover {
+    background-color: $white;
+    border-color: $team-color;
+}
+
+.uk-slidenav {
+    color: $team-color;
+}
