@@ -12,6 +12,9 @@ $style: "sections";
         position: relative;
         padding: 30px 30px;
         max-width: 500px;
+        @media screen and (max-width: 415px) {
+            border: none;
+        }
         @media screen and (min-width: 992px) {
             max-width: 900px;
             padding: 50px 0 50px;
@@ -25,9 +28,11 @@ $style: "sections";
             display: inline-block;
             position: absolute;
             top: 0;
+            @media screen and (max-width: 420px) {
+                display: none;
+            }
             @media screen and (min-width: 992px) {
                 width: 240px;
-                height: 2px;
             }
         }
         &:before {

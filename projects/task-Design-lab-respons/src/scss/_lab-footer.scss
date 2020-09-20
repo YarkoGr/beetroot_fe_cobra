@@ -4,6 +4,9 @@ $style: "lab-footer";
     @include flex (center, center);
     &__footer-logo {
         margin-right: 36px;
+        @media screen and (max-width: 415px) {
+            margin-right: 15px;
+        }
     }
     &__footer-text {
         font-size: $font-size-footer;
