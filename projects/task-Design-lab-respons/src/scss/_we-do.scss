@@ -1,0 +1,42 @@
+$style: "we-do";
+.#{$style} {
+    @media screen and (min-width: 992px) {
+        padding: 119px 0 114px;
+    }
+    &__wrapper {
+        padding-top: 50px;
+        @media screen and (min-width: 992px) {
+            padding: 125px 0 92px;
+        }
+    }
+    &__item {
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: 992px) {
+            margin-bottom: 110px;
+        }
+    }
+    &__icon {
+        margin-bottom: 15px;
+        transition: .5s ease;
+        @media screen and (min-width: 992px) {
+            margin-bottom: 39px;
+        }
+        &:hover {
+            opacity: .5;
+        }
+    }
+    &__subtitle {
+        @include text($font-size-icons, 700, $text-color);
+        letter-spacing: 3.20px;
+        margin-bottom: 15px;
+        @media screen and (min-width: 992px) {
+            margin-bottom: 37px;
+        }
+    }
+    &__text {
+        line-height: 1.85;
+    }
+}

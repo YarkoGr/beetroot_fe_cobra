@@ -1,0 +1,27 @@
+    $style: "services";
+    .#{$style} {
+        background: url(../img/services.png) center no-repeat;
+        background-size: cover;
+        @media screen and (min-width: 992px) {
+            padding: 127px 0 109px;
+        }
+        &__title {
+            color: white;
+            &::before,
+            &::after {
+                background-color: $white;
+            }
+        }
+        &__wrapper {
+            border-color: $white;
+            color: $white;
+            line-height: 1.62;
+            @media screen and (min-width: 992px) {
+                padding: 79px 0 30px;
+            }
+            &:before,
+            &:after {
+                background-color: $white;
+            }
+        }
+    }

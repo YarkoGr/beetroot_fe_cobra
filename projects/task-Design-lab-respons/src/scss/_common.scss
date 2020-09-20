@@ -1,0 +1,20 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Lato", sans-serif;
+            }
+            
+            html,
+            body {
+                min-height: 100vh;
+                font-size: 100%;
+            }
+            
+            a {
+                display: inline-block;
+            }
+            
+            // @media screen and (min-width: 576px) {}
+            // @media screen and (min-width: 768px) {}
+            // @media screen and (min-width: 992px) {}

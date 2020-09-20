@@ -1,0 +1,68 @@
+$style: "header";
+.#{$style} {
+    background: url(../img/header-bg.png) center no-repeat;
+    @include flex(center, center);
+    background-size: cover;
+    min-height: 100vh;
+    &__wrapper {
+        text-align: center;
+        @include flex(center, center, column);
+    }
+    &__logo {
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 53px;
+        }
+    }
+    h1 {
+        @include text($font-big, 700);
+        letter-spacing: 8.74px;
+        text-transform: uppercase;
+        @include flex(center, center, column);
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 37px;
+        }
+        span {
+            letter-spacing: 8.64px;
+            display: block;
+        }
+    }
+    &__header-span {
+        max-width: 580px;
+        @include text($font-text, 400, $white);
+        line-height: 29px;
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 120px;
+        }
+    }
+    &__scroll-text {
+        color: $white;
+        position: absolute;
+        bottom: 20px;
+        opacity: 0;
+        transition: 0.5s ease;
+        font-size: $font-size-title;
+    }
+    a:hover+&__scroll-text {
+        opacity: 1;
+    }
+    &__img-scroll {
+        animation: pulsing 2s infinite;
+    }
+    @keyframes pulsing {
+        0% {
+            transform: scale(0.5, 0.5);
+            opacity: 0.1;
+        }
+        50% {
+            transform: scale(1.0, 1.0);
+            opacity: 0.9;
+        }
+        100% {
+            transform: scale(0.5, 0.5);
+            opacity: 0.1;
+        }
+    }
+}
