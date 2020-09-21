@@ -2,8 +2,8 @@ $style: "card-team";
 .#{$style} {
     &__header {
         @include flex(center, center, column);
-        padding-top: 50px;
-        margin-bottom: 39px;
+        padding-top: 30px;
+        margin-bottom: 15px;
     }
     &__header-subtitle {
         @include text($midle-fsz, 400, $title-color);
@@ -36,10 +36,20 @@ $style: "card-team";
         }
     }
     &__card-wrapper {
-        @include flex();
+        @include flex(space-between);
+        position: relative;
+        &:before {
+            content: '';
+            width: 2px;
+            height: 100%;
+            background-color: $team-color;
+            display: inline-block;
+            position: absolute;
+            right: 50%;
+        }
     }
     &__card-wrapper-item {
-        min-width: 50%;
+        width: calc(100% / 2 - 15px);
         min-height: 561px;
     }
 }

@@ -1,7 +1,5 @@
 $style: "card-team-descript";
 .#{$style} {
-    border-left: 2px solid $team-color;
-    margin-left: -2px;
     @include flex(center, center, column);
     span {
         display: block;
@@ -28,7 +26,8 @@ $style: "card-team-descript";
     }
     &__social-list {
         list-style: none;
-        margin-bottom: 30px;
+        padding: 0;
+        margin: 0 0 20px;
         @include flex();
         a {
             display: flex;
