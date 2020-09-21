@@ -3,7 +3,7 @@ $style: "card-team";
     &__header {
         @include flex(center, center, column);
         padding-top: 115px;
-        margin-bottom: 39px;
+        margin-bottom: 15px;
     }
     &__header-subtitle {
         @include text($midle-fsz, 400, $title-color);
@@ -51,11 +51,10 @@ $style: "card-team";
         }
         &::before {
             transform: rotate(-45deg);
-            left: -15px;
         }
         &::after {
             transform: rotate(135deg);
-            right: -15px;
+            right: 0;
         }
     }
     &__card-wrapper-item {

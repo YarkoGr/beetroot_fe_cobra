@@ -1,10 +1,17 @@
 $style: "card-team-descript";
 .#{$style} {
-    border-left: 2px solid $team-color;
-    margin-left: -2px;
     @include flex(center, center, column);
     span {
         display: block;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 2px;
+        height: 100%;
+        background-color: $team-color;
+        left: 50%;
     }
     &__title {
         @include text($title-fsz, 700, $text-color);
