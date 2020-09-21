@@ -4,7 +4,6 @@
         list-style: none;
         max-width: 1120px;
         margin: 0 auto;
-        padding-top: 30px;
         &__item-beginner {
             margin: 0 20px 20px 0;
             min-width: calc(70% - 58px);
@@ -49,7 +48,6 @@
         &__item {
             max-width: calc(100% / 3 - 20px);
             margin-right: 20px;
-            margin-bottom: 20px;
             transition: opacity .2s ease;
             a {
                 text-decoration: none;
