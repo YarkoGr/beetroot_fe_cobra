@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: $ff-raleway;
+}
+
+a {
+    display: inline;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+// @media screen and (min-width: 576px) {}
+// @media screen and (min-width: 768px) {}
+// @media screen and (min-width: 992px) {}
