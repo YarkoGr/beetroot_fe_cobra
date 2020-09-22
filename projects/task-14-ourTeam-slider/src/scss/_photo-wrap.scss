@@ -4,8 +4,12 @@
         &__inner {
             display: flex;
             position: relative;
+            max-width: 390px;
+            max-height: 390px;
             img {
-                display: block;
+                position: relative;
+                @include position();
+                object-fit: cover;
                 border: 1px solid $team-color;
             }
             &::before,
