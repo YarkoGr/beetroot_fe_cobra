@@ -3,8 +3,14 @@ $style: "colors-list";
     display: flex;
     flex-direction: row;
     &__item {
-        margin-right: 9px;
-        &:last-child {
+        position: relative;
+        span {
+            display: block;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        &:last-child .colors-list__item-button {
             margin-right: 0;
         }
         &:nth-of-type(1) .colors-list__item-button {
@@ -19,22 +25,24 @@ $style: "colors-list";
         &:nth-of-type(4) .colors-list__item-button {
             background-color: $fourth-btn-color;
         }
+        input {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        input:checked~.colors-list__item-button,
+        input:hover~.colors-list__item-button {
+            transform: scale(1.8);
+            border: 1px solid $border-btn-color;
+        }
     }
     &__item-button {
         width: 10px;
         height: 10px;
-        border: none;
         border-radius: 50%;
         transition: transform .5s ease;
-        &:hover {
-            cursor: pointer;
-            transform: scale(2);
-            border: 1px solid $border-btn-color;
-        }
-        &:focus {
-            outline: none;
-            transform: scale(2);
-            border: 1px solid $border-btn-color;
-        }
+        margin-right: 5px;
     }
 }
