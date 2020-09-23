@@ -2,5 +2,18 @@ $style: "about-us";
 .#{$style} {
     background-color: $col-05;
     padding: 70px 0;
-    @include flex (space-around, stretch, column);
+    &__wrapper {
+        @include flex (space-between, center);
+    }
+    &__description {
+        max-width: 499px;
+    }
+    &__title {
+        @include text($title-fsz, 700);
+        margin-bottom: 20px;
+    }
+    &__text {
+        @include text($text-fsz, 300);
+        line-height: 27px;
+    }
 }

@@ -1,0 +1,45 @@
+$style: "our-services";
+.#{$style} {
+    background-color: $col-03;
+    &__wrapper {
+        padding: 179px 0 151px;
+        @include flex(space-around, center);
+        background-image: url(../img/services.png);
+        background-repeat: no-repeat;
+        background-position: center right 50px;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__list-item {
+        background-color: $white;
+        margin-bottom: 20px;
+        box-shadow: 0px 8px 12px 3px rgba(0, 0, 0, 0.57);
+        &:hover {
+            transform: scale(0.99);
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__list-item-link {
+        display: flex;
+        min-height: 100px;
+        text-decoration: none;
+        @include text($btn-fsz, 700, $text-color);
+    }
+    &__list-item-link-text {
+        @include flex(center, center);
+        text-align: center;
+        width: 300px;
+        border-right: 1px solid $text-color;
+    }
+    &__list-item-link-icon {
+        width: 100px;
+        @include flex (center, center);
+        font-size: 44px;
+    }
+    &__description-title {
+        @include text($title-fsz, 700);
+    }
+}

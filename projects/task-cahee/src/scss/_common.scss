@@ -20,6 +20,15 @@ a {
     margin: 0 auto;
 }
 
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+    display: flex !important;
+}
+
 // @media screen and (min-width: 576px) {}
 // @media screen and (min-width: 768px) {}
 // @media screen and (min-width: 992px) {}
