@@ -1,2 +1,9 @@
 $style: "gallery";
-.#{$style} {}
+.#{$style} {
+    background-color: $col-04;
+    &__wrapper {}
+    &__title {}
+    &__subtitle {}
+    &__row {}
+    &__row-big-foto {}
+}
