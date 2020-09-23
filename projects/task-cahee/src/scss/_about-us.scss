@@ -1,0 +1,6 @@
+$style: "about-us";
+.#{$style} {
+    background-color: $col-05;
+    padding: 70px 0;
+    @include flex (space-around, stretch, column);
+}
