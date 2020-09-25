@@ -29,10 +29,15 @@ a {
     display: flex !important;
 }
 
-.view-more {
-    @include text($btn-fsz, 300, $black);
+.btn-main {
+    @include text($btn-fsz, 300);
+    font-family: $ff-raleway;
     padding: 0 43px;
-    min-width: 55px;
+    min-height: 55px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.42);
 }
 
 // @media screen and (min-width: 576px) {}

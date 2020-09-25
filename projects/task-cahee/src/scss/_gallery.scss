@@ -19,9 +19,6 @@ $style: "gallery";
     &__row {
         @include flex ();
         margin-bottom: 30px;
-        &:last-child {
-            margin-bottom: 0;
-        }
     }
     &__row-big-foto {
         min-width: calc((100% / 12) * 8 - 30px);
@@ -66,6 +63,15 @@ $style: "gallery";
         }
         &:last-child {
             margin-right: 0;
+        }
+    }
+    &__btn {
+        background-color: $col-btn-01;
+        transition: 0.3s ease;
+        &:hover {
+            background-color: $white;
+            border: 1px solid $col-btn-01;
+            color: $col-btn-01;
         }
     }
 }
