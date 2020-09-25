@@ -29,6 +29,12 @@ a {
     display: flex !important;
 }
 
+.view-more {
+    @include text($btn-fsz, 300, $black);
+    padding: 0 43px;
+    min-width: 55px;
+}
+
 // @media screen and (min-width: 576px) {}
 // @media screen and (min-width: 768px) {}
 // @media screen and (min-width: 992px) {}

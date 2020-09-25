@@ -1,6 +1,7 @@
 $style: "start-page";
 .#{$style} {
     min-height: 100vh;
+    padding-top: 50px;
     background: url(../img/start-bg.png) no-repeat center;
     background-size: cover;
     position: relative;
@@ -11,6 +12,7 @@ $style: "start-page";
     &__logo {
         @include text($start-title-fsz, 400, $text-color);
         font-family: $ff-pacifico;
+        text-decoration: none;
     }
     &__nav {
         list-style: none;
@@ -26,6 +28,7 @@ $style: "start-page";
     &__nav-item-link {
         text-decoration: none;
         @include text(16px, 700, $text-color);
+        padding-top: 10px;
         &:hover,
         &:focus {
             border-top: 3px solid $col-btn;

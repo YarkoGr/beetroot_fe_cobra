@@ -1,9 +1,71 @@
 $style: "gallery";
 .#{$style} {
     background-color: $col-04;
-    &__wrapper {}
-    &__title {}
-    &__subtitle {}
-    &__row {}
-    &__row-big-foto {}
+    &__wrapper {
+        padding: 100px 0 140px;
+        text-align: center;
+    }
+    &__title {
+        @include text ($title-fsz, 700, $black);
+        margin-bottom: 28px;
+    }
+    &__subtitle {
+        @include text ($text-fsz, 300, $black);
+        max-width: 577px;
+        line-height: 1.59;
+        display: block;
+        margin: 0 auto 46px;
+    }
+    &__row {
+        @include flex ();
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__row-big-foto {
+        min-width: calc((100% / 12) * 8 - 30px);
+        position: relative;
+        margin-right: 30px;
+        img {
+            position: relative;
+            @include position();
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__row-inner {
+        @include flex ($direction: column);
+        min-width: calc((100% / 12) * 4 - 30px);
+    }
+    &__small-foto {
+        position: relative;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        img {
+            position: relative;
+            @include position();
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__midle-foto {
+        min-width: calc((100% / 12) * 6 - 30px);
+        position: relative;
+        margin-right: 30px;
+        img {
+            position: relative;
+            @include position();
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
