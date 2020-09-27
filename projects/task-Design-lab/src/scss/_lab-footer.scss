@@ -2,7 +2,7 @@ $style: "lab-footer";
 .#{$style} {
     padding: 63px 0;
     @include flex (center, center);
-    &__footer-logo {
+    a {
         margin-right: 36px;
     }
     &__footer-text {
