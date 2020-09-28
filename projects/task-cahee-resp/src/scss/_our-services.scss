@@ -1,0 +1,77 @@
+$style: "our-services";
+.#{$style} {
+    background-color: $col-03;
+    &__wrapper {
+        padding: 50px 0;
+        @include flex(space-around, center, column-reverse);
+        background-image: url(../img/services.png);
+        background-repeat: no-repeat;
+        background-position: center right 50px;
+        @media screen and (min-width: 992px) {
+            padding: 179px 0 151px;
+            @include flex(space-around, center);
+        }
+    }
+    &__list {
+        list-style: none;
+    }
+    &__list-item {
+        width: 250px;
+        background-color: $white;
+        margin-bottom: 20px;
+        box-shadow: 0px 8px 12px 3px rgba(0, 0, 0, 0.57);
+        @media screen and (min-width: 350px) {
+            width: 300px;
+        }
+        @media screen and (min-width: 400px) {
+            width: 350px;
+        }
+        @media screen and (min-width: 576px) {
+            width: 400px;
+        }
+        &:hover {
+            transform: scale(0.99);
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__list-item-link {
+        display: flex;
+        min-height: 100px;
+        text-decoration: none;
+        @include text($btn-fsz, 700, $text-color);
+    }
+    &__list-item-link-text {
+        @include flex(center, center);
+        text-align: center;
+        width: 150px;
+        border-right: 1px solid $text-color;
+        @media screen and (min-width: 350px) {
+            width: 200px;
+        }
+        @media screen and (min-width: 400px) {
+            width: 250px;
+        }
+        @media screen and (min-width: 576px) {
+            width: 300px;
+        }
+    }
+    &__list-item-link-icon {
+        @include flex (center, center);
+        margin: 0 auto;
+        font-size: 44px;
+    }
+    &__description-title {
+        @include text($logo-fsz, 700);
+        text-align: center;
+        margin-bottom: 20px;
+        @media screen and (min-width: 576px) {
+            @include text($title-fsz, 700);
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: 992px) {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+$style: "start-page";
+.#{$style} {
+    min-height: 100vh;
+    background: url(../img/start-bg.png)no-repeat center;
+    &__wrapper {
+        padding: 50px 0;
+        position: relative;
+    }
+    &__header {
+        @include flex(space-between, center);
+        margin-bottom: 100px;
+    }
+    &__logo {
+        @include text($start-title-fsz, 400, $text-color);
+        font-family: $ff-pacifico;
+        text-decoration: none;
+    }
+    &__nav {
+        list-style: none;
+        @include flex($align-items: center);
+        position: absolute;
+        top: 0;
+        right: 50px;
+        @media screen and (min-width: 992px) {
+            position: static;
+        }
+    }
+    &__nav-item {
+        transition: border 0.1s ease;
+        margin-right: 10px;
+        @media screen and (min-width: 768px) {
+            margin-right: 20px;
+        }
+        @media screen and (min-width: 992px) {
+            margin-right: 58px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__nav-item-link {
+        text-decoration: none;
+        @include text(16px, 700, $text-color);
+        padding-top: 10px;
+        &:hover,
+        &:focus {
+            border-top: 3px solid $col-btn;
+        }
+    }
+    &__description {
+        max-width: calc((100% / 12) * 7);
+        @include flex($align-items: start, $direction: column);
+        @media screen and (min-width: 992px) {
+            max-width: calc((100% / 12) * 6);
+        }
+    }
+    &__description-title {
+        @include text($start-title-fsz, 900, $black);
+        margin-bottom: 34px;
+    }
+    &__description-text {
+        @include text($text-fsz, 300, $text-color);
+        line-height: 1.59;
+        margin-bottom: 31px;
+    }
+    &__description-btn {
+        min-height: 55px;
+        padding: 0 25px;
+        background-color: $col-btn;
+        @include text($btn-fsz, 300, $white);
+        font-family: $ff-raleway;
+        border: none;
+        box-shadow: 0px 6px 10px 1px rgba(255, 96, 51, 0.55);
+        transition: 0.3s ease;
+        &:hover {
+            background-color: $white;
+            color: $col-btn;
+            border: 1px solid $col-btn;
+        }
+    }
+    &__scroll-icon {
+        display: none;
+        @media screen and (min-width: 576px) {
+            display: block;
+            position: absolute;
+            right: 50%;
+            bottom: 10px;
+            animation: pulsing 2s infinite;
+        }
+    }
+    @keyframes pulsing {
+        0% {
+            // transform: scale(0.5, 0.5);
+            opacity: 0.1;
+        }
+        50% {
+            // transform: scale(1.0, 1.0);
+            opacity: 0.9;
+        }
+        100% {
+            // transform: scale(0.5, 0.5);
+            opacity: 0.1;
+        }
+    }
+}
