@@ -1,0 +1,100 @@
+$style: "contact";
+.#{$style} {
+    background: url(../img/contact.png) no-repeat center;
+    background-size: cover;
+    &__wrapper {
+        padding: 101px 0 120px;
+    }
+    &__title {
+        @include text($title-fsz, 700, $black);
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    &__subtitle {
+        @include text($text-fsz, 300, $black);
+        line-height: 1.47;
+        display: block;
+        margin: 0 auto;
+        max-width: 347px;
+        text-align: center;
+        margin-bottom: 46px;
+    }
+    &__form-wrap {
+        @include flex(center, center, column);
+        @media screen and (min-width: 576px) {
+            @include flex(space-between);
+        }
+    }
+    &__form {
+        @include flex($direction: column);
+        width: calc((100% / 12) * 10);
+        margin-bottom: 20px;
+        @media screen and (min-width: 576px) {
+            margin-bottom: 0;
+            width: calc((100% / 12) * 5);
+        }
+    }
+    &__form-input {
+        margin-bottom: 15px;
+        padding: 15px 0 15px 20px;
+        outline: none;
+        background-color: $col-05;
+        border: none;
+        position: relative;
+        &:focus {
+            border-left: 5px solid $col-07;
+            &::placeholder {
+                font-family: $ff-raleway;
+                font-weight: 700;
+            }
+        }
+        &::placeholder {
+            @include text($small-fsz);
+            font-family: $ff-raleway;
+        }
+    }
+    &__form-textarea {
+        resize: none;
+        outline: none;
+        border: none;
+        padding: 15px 0 0 20px;
+        background-color: $col-05;
+        margin-bottom: 20px;
+        &::placeholder {
+            @include text($small-fsz);
+            font-family: $ff-raleway;
+        }
+    }
+    &__btn {
+        background-color: $col-05;
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+    &__contact-data {
+        width: calc((100% / 12) * 5);
+        @include flex($direction: column);
+        span,
+        a {
+            display: block;
+            text-decoration: none;
+            color: $black;
+        }
+        span {
+            &:nth-of-type(odd) {
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+        }
+        address {
+            margin-bottom: 15px;
+        }
+        a {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

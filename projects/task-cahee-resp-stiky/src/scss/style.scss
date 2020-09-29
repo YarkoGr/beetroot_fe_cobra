@@ -1,0 +1,85 @@
+@import "vars";
+@import "mixins";
+@import "common";
+@import "./start-page";
+@import "./_about-us";
+@import "./our-services";
+@import "./gallery";
+@import "./subscribe";
+@import "./blog";
+@import "./contact";
+@import "./footer";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700;900&display=swap');
+//navbar//
+#nav {
+    position: relative;
+    ul {
+        display: none;
+    }
+    // ul 
+    input.trigger {
+        display: none;
+        // position: absolute;
+        // top: -9999px;
+        // left: -9999px;
+        &:checked~ul li a {
+            border: none;
+            transition: transform 0.1s ease;
+            text-align: center;
+            padding-top: 0;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        &:checked~ul li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &:checked~ul,
+        &:checked~ul li {
+            margin-right: 0;
+            @include flex($direction: column);
+            @media (min-width: 768px) {
+                @include flex();
+            }
+        }
+    }
+    label {
+        display: block;
+        min-height: 2em;
+        font-size: 2.1em;
+        margin: 0;
+        cursor: pointer;
+        line-height: 1em;
+    }
+    label:after {
+        // position: absolute;
+        // right: 0;
+        // top: 0;
+        content: "\2261";
+        font-size: 1.8em;
+    }
+    @media(min-width:768px) {
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+        label {
+            display: none;
+        }
+    }
+    // breakpoint-end
+}
+
+.title {
+    font-size: $logo-fsz;
+    text-align: center;
+    margin-bottom: 20px;
+    @media screen and (min-width: 576px) {
+        font-size: $title-fsz;
+    }
+}
+
+//navbar end
