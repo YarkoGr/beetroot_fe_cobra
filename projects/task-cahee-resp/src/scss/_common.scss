@@ -17,7 +17,10 @@ a {
 
 .container {
     margin: 0 auto;
-    @media screen and (max-width: 350px) {
+    @media screen and (min-width: 280px) {
+        max-width: 250px;
+    }
+    @media screen and (min-width: 350px) {
         max-width: 320px;
     }
     @media screen and (min-width: 576px) {
