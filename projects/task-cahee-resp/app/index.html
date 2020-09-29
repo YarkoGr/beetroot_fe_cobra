@@ -13,7 +13,7 @@
 <body>
     <section class="start-page">
         <div class="start-page__wrapper container">
-            <nav class="start-page__header" role="navigation" id="nav">
+            <nav class="start-page__header" id="nav">
                 <a class="start-page__logo" href="/">Cahee</a>
                 <input class="trigger" type="checkbox" id="mainNavButton">
                 <label for="mainNavButton" onclick></label>
@@ -36,7 +36,6 @@
                     <li class="start-page__nav-item">
                         <a href="#contact" class="start-page__nav-item-link">CONTACT</a>
                     </li>
-                </ul>
                 </ul>
             </nav>
 
@@ -144,7 +143,7 @@
             <span class="subscribe__subtitle">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam.</span>
-            <form class="subscribe__form" action="" method="get">
+            <form class="subscribe__form" action="mailto:" method="get">
                 <input class="subscribe__input" type="email" placeholder="Your email address..." name="email" id="email" />
                 <button class="subscribe__btn btn-main" type="submit">
                     SUBSCRIBE
@@ -207,11 +206,12 @@
             <span class="contact__subtitle">For new projects, ideas, business or anything
                 you'd like to discuss, contact with me!</span>
             <div class="contact__form-wrap container">
-                <form class="contact__form" action="" method="get">
+                <form class="contact__form" action="mailto:" method="get">
                     <input class="contact__form-input" type="text" placeholder="Auskteez Tran">
-                    <input class="contact__form-input" type="email" placeholder="Your email..." name="" id="mail">
-                    <input class="contact__form-input" type="tel" placeholder="Your phone number..." name="" id="phone">
-                    <textarea class="contact__form-textarea" name="" id="textarea" cols="30" rows="15" placeholder="Your messge..."></textarea>
+                    <input class="contact__form-input" type="email" placeholder="Your email..." name="contact-mail" id="mail">
+                    <input class="contact__form-input" type="tel" placeholder="Your phone number..." name="contact-phone" id="phone">
+                    <textarea class="contact__form-textarea" name="contact-placearea" id="textarea" cols="30" rows="15" placeholder="Your messge..."></textarea>
+                    <button class="contact__btn btn-main" type="submit">SUBMIT</button>
                 </form>
                 <div class="contact__contact-data">
                     <address>

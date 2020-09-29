@@ -59,9 +59,17 @@ $style: "contact";
         border: none;
         padding: 15px 0 0 20px;
         background-color: $col-05;
+        margin-bottom: 20px;
         &::placeholder {
             @include text($small-fsz);
             font-family: $ff-raleway;
+        }
+    }
+    &__btn {
+        background-color: $col-05;
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(0.95);
         }
     }
     &__contact-data {
