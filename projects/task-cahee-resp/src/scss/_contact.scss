@@ -20,11 +20,19 @@ $style: "contact";
         margin-bottom: 46px;
     }
     &__form-wrap {
-        @include flex(space-between);
+        @include flex(center, center, column);
+        @media screen and (min-width: 576px) {
+            @include flex(space-between);
+        }
     }
     &__form {
         @include flex($direction: column);
-        width: calc((100% / 12) * 5);
+        width: calc((100% / 12) * 10);
+        margin-bottom: 20px;
+        @media screen and (min-width: 576px) {
+            margin-bottom: 0;
+            width: calc((100% / 12) * 5);
+        }
     }
     &__form-input {
         margin-bottom: 15px;

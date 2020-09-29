@@ -2,6 +2,7 @@ $style: "start-page";
 .#{$style} {
     min-height: 100vh;
     background: url(../img/start-bg.png)no-repeat center;
+    background-size: auto;
     &__wrapper {
         padding: 50px 0;
         position: relative;

@@ -1,22 +1,25 @@
-$style: "footer";
-.#{$style} {
-    background-color: $text-color;
-    color: $col-footer-text;
-    &__wrapper {
-        padding: 32px 0;
-        @include flex(space-between, center);
-    }
-    span {
-        &:last-child {
-            font-size: 15px;
+    $style: "footer";
+    .#{$style} {
+        background-color: $text-color;
+        color: $col-footer-text;
+        &__wrapper {
+            padding: 32px 0;
+            @include flex(center, center, column);
+            @media screen and (min-width: 576px) {
+                @include flex(space-between, center);
+            }
+        }
+        span {
+            &:last-child {
+                font-size: 15px;
+            }
+        }
+        &__link {
+            @include text($small-logo-fsz, 400, $col-footer-text);
+            text-decoration: none;
+            font-family: $ff-pacifico;
+        }
+        &__color {
+            color: $col-footer-text-01;
         }
     }
-    &__link {
-        @include text($small-logo-fsz, 400, $col-footer-text);
-        text-decoration: none;
-        font-family: $ff-pacifico;
-    }
-    &__color {
-        color: $col-footer-text-01;
-    }
-}

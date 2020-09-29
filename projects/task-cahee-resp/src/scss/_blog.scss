@@ -17,22 +17,33 @@ $style: "blog";
         margin: 0 auto 47px;
     }
     &__row {
-        @include flex();
+        @include flex(space-around, center, $wrap: wrap);
         margin-bottom: 50px;
+        @media screen and (min-width: 992px) {
+            @include flex(space-between, center);
+        }
     }
     &__row-card {
-        width: calc((100% / 12) * 4 - 30px);
         position: relative;
-        margin-right: 30px;
+        min-height: 311px;
+        width: calc((100% / 12) * 11);
+        margin-bottom: 15px;
+        @media screen and (min-width: 768px) {
+            width: calc((100% / 12) * 6 - 15px);
+        }
+        @media screen and (min-width: 992px) {
+            width: calc((100% / 12) * 4 - 30px);
+            margin-bottom: 0;
+        }
         img {
-            position: relative;
+            position: absolute;
             @include position();
-            object-fit: cover;
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
         &:last-child {
-            margin-right: 0;
+            margin-bottom: 0;
         }
     }
     &__row-card-date {

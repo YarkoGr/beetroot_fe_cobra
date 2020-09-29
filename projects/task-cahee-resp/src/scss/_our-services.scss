@@ -16,18 +16,19 @@ $style: "our-services";
         list-style: none;
     }
     &__list-item {
-        width: 250px;
+        max-width: 200px;
+        @include flex(stretch, stretch, column);
         background-color: $white;
         margin-bottom: 20px;
         box-shadow: 0px 8px 12px 3px rgba(0, 0, 0, 0.57);
         @media screen and (min-width: 350px) {
-            width: 300px;
+            max-width: 200px;
         }
         @media screen and (min-width: 400px) {
-            width: 350px;
+            max-width: 300px;
         }
         @media screen and (min-width: 576px) {
-            width: 400px;
+            max-width: 400px;
         }
         &:hover {
             transform: scale(0.99);
@@ -44,21 +45,16 @@ $style: "our-services";
     }
     &__list-item-link-text {
         @include flex(center, center);
+        flex: 1;
         text-align: center;
-        width: 150px;
         border-right: 1px solid $text-color;
-        @media screen and (min-width: 350px) {
-            width: 200px;
-        }
-        @media screen and (min-width: 400px) {
-            width: 250px;
-        }
-        @media screen and (min-width: 576px) {
-            width: 300px;
-        }
+        @media screen and (min-width: 350px) {}
+        @media screen and (min-width: 400px) {}
+        @media screen and (min-width: 576px) {}
     }
     &__list-item-link-icon {
         @include flex (center, center);
+        width: 100px;
         margin: 0 auto;
         font-size: 44px;
     }
