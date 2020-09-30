@@ -55,6 +55,7 @@ $style: "form";
     .inputs {
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
         label {
             margin-bottom: 10px;
         }
@@ -67,17 +68,9 @@ $style: "form";
             transition: border-color 0.5s ease;
         }
     }
-    input:invalid+&__error {
-        visibility: visible;
-    }
     input:focus,
     input:hover {
         border-color: $btn-color;
-    }
-    &__error {
-        visibility: hidden;
-        color: $color-red;
-        font-size: $second-font-size;
     }
     &__checkbox-mod-label {
         display: flex;
