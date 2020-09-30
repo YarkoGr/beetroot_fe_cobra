@@ -20,7 +20,7 @@ a {
 .container {
     margin: 0 auto;
     max-width: 540px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     @media screen and (min-width: 576px) {
         max-width: 540px;
     }
@@ -54,11 +54,24 @@ a {
     border-color: $team-color;
 }
 
-.uk-dotnav>*>:hover {
+.uk-dotnav>*> :hover {
     background-color: $white;
     border-color: $team-color;
 }
 
 .uk-slidenav {
     color: $team-color;
+}
+
+.uk-dotnav {
+    margin-left: 0;
+}
+
+.uk-dotnav>* {
+    padding-left: 0;
+    margin-right: 12px;
+    transform: translateX(5px);
+     :last-child {
+        margin-right: 0;
+    }
 }
