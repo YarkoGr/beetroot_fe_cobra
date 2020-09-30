@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Title</title>
+    <title>task-form</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -13,8 +13,8 @@
     <div class="form">
         <div class="form__container">
             <ul class="form__nav">
-                <li class="form__nav-item">
-                    <a class="form__nav-item-link" href="#">Sign in</a>
+                <li class="form__nav-item form__nav-item--active">
+                    <a class="form__nav-item-link" href="#" id="focusmeplease">Sign in</a>
                 </li>
                 <li class="form__nav-item">
                     <a class="form__nav-item-link" href="#">Join us</a>
@@ -23,32 +23,32 @@
             <form class="form__wrapper" action="#" method="get">
                 <div class="form__username inputs">
                     <label for="username">Username</label>
-                    <input type="text" name="username" minlength="3" id="username" />
+                    <input required type="text" name="username" id="username" />
                     <div class="form__error">error</div>
                 </div>
                 <div class="form__user-passwd inputs">
                     <label for="passwd">Password</label>
-                    <input type="password" name="passwd" minlength="5" id="passwd" />
+                    <input required type="password" name="passwd" minlength="5" id="passwd" />
                     <div class="form__error">error</div>
                 </div>
                 <div class="form__checkbox-mod">
                     <input checked type="checkbox" name="check" id="check" />
                     <label class="form__checkbox-mod-label" for="check"><span class="form__mod-icon">&#10004;</span>Keep me signed
-              in</label
-            >
-          </div>
-          <button class="form__sign" type="submit">Sign in</button>
-          <ul class="form__futer">
-            <li class="form__futer-item">
-              <a class="form__futer-item-link" href="#">Forgot password</a>
-            </li>
-            <li class="form__futer-item">
-              <a class="form__futer-item-link" href="#">Create an account</a>
-            </li>
-          </ul>
-        </form>
-      </div>
+            in</label>
+                </div>
+                <button class="form__sign" type="submit">Sign in</button>
+                <ul class="form__futer">
+                    <li class="form__futer-item">
+                        <a class="form__futer-item-link" href="#">Forgot password</a>
+                    </li>
+                    <li class="form__futer-item">
+                        <a class="form__futer-item-link" href="#">Create an account</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
     </div>
     <script src="js/bundle.js"></script>
-  </body>
+</body>
+
 </html>
