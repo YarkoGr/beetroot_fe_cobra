@@ -1,144 +1,147 @@
-$style: "start-page";
-.#{$style} {
-    min-height: 100vh;
-    background: url(../img/start-bg.png)no-repeat center;
-    background-size: auto;
-    transition: 0.3s ease;
-    &__wrapper {
-        padding: 50px 0;
-        position: relative;
-    }
-    &__nav-wrap {
-        position: relative;
-    }
-    &__header {
-        @include flex(start, center);
-        margin-bottom: 100px;
-        // @media screen and (min-width: 576px) {
-        //     @include flex(start, center, column);
-        // }
-        @media screen and (min-width: 768px) {
-            @include flex(start, center, column);
-        }
-        @media screen and (min-width: 992px) {
-            @include flex(space-between, center);
-        }
-    }
-    &__logo {
-        @include text($start-title-fsz, 400, $text-color);
-        font-family: $ff-pacifico;
-        text-decoration: none;
-    }
-    &__nav {
-        list-style: none;
-        @include flex();
-        display: none;
-        @media screen and (min-width: 768px) {
-            display: flex;
-        }
-    }
-    &__nav-item {
-        transition: border 0.1s ease;
-        margin-right: 5px;
-        @media screen and (min-width: 768px) {
-            margin-right: 20px;
-        }
-        @media screen and (min-width: 992px) {
-            margin-right: 58px;
-        }
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-    &__nav-item-link {
-        text-decoration: none;
-        @include text(16px, 700, $text-color);
-        padding-top: 10px;
-        &:hover,
-        &:focus {
-            border-top: 3px solid $col-btn;
-        }
-    }
-    &__description {
-        max-width: calc((100% / 12) * 8);
-        @include flex($align-items: start, $direction: column);
-        @media screen and (min-width: 992px) {
-            max-width: calc((100% / 12) * 6);
-        }
-    }
-    &__description-title {
-        @include text($start-title-fsz, 900, $black);
-        margin-bottom: 34px;
-    }
-    &__description-text {
-        @include text($text-fsz, 300, $text-color);
-        line-height: 1.59;
-        margin-bottom: 31px;
-    }
-    &__description-btn {
-        min-height: 55px;
-        padding: 0 25px;
-        background-color: $col-btn;
-        @include text($btn-fsz, 300, $white);
-        font-family: $ff-raleway;
-        border: none;
-        box-shadow: 0px 6px 10px 1px rgba(255, 96, 51, 0.55);
+    $style: "start-page";
+    .#{$style} {
+        min-height: 100vh;
+        background: url(../img/start-bg.png)no-repeat center;
+        background-size: auto;
         transition: 0.3s ease;
-        &:hover {
-            background-color: $white;
-            color: $col-btn;
-            border: 1px solid $col-btn;
+        &__wrapper {
+            padding: 380px 0 50px;
+            position: relative;
+            @media screen and (min-width: 768px) {
+                padding: 250px 0 50px;
+            }
+        }
+        &__header {
+            position: fixed;
+            top: 10px;
+            right: 50px;
+            left: 50px;
+            @include flex(start, center, column);
+            @media screen and (min-width: 768px) {
+                @include flex(space-between, center);
+            }
+        }
+        &__logo {
+            @include text($start-title-fsz, 400, $text-color);
+            font-family: $ff-pacifico;
+            text-decoration: none;
+        }
+        &__nav {
+            list-style: none;
+            @include flex();
+            display: none;
+            @media screen and (min-width: 768px) {
+                display: flex;
+            }
+        }
+        &__nav-item {
+            transition: border 0.1s ease;
+            margin-right: 5px;
+            @media screen and (min-width: 768px) {
+                margin-right: 20px;
+            }
+            @media screen and (min-width: 992px) {
+                margin-right: 58px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &__nav-item-link {
+            text-decoration: none;
+            @include text(16px, 700, $text-color);
+            padding-top: 10px;
+            &:hover,
+            &:focus {
+                border-top: 3px solid $col-btn;
+            }
+        }
+        &__description {
+            max-width: calc((100% / 12) * 8);
+            @include flex($align-items: start, $direction: column);
+            @media screen and (min-width: 992px) {
+                max-width: calc((100% / 12) * 6);
+            }
+        }
+        &__description-title {
+            @include text($start-title-fsz, 900, $black);
+            margin-bottom: 34px;
+        }
+        &__description-text {
+            @include text($text-fsz, 300, $text-color);
+            line-height: 1.59;
+            margin-bottom: 31px;
+        }
+        &__description-btn {
+            min-height: 55px;
+            padding: 0 25px;
+            background-color: $col-btn;
+            @include text($btn-fsz, 300, $white);
+            font-family: $ff-raleway;
+            border: none;
+            box-shadow: 0px 6px 10px 1px rgba(255, 96, 51, 0.55);
+            transition: 0.3s ease;
+            &:hover {
+                background-color: $white;
+                color: $col-btn;
+                border: 1px solid $col-btn;
+            }
+        }
+        &__mouse {
+            display: none;
+            margin: 0 auto;
+            width: 26px;
+            height: 46px;
+            border-radius: 13px;
+            border: 2px solid $black;
+            bottom: 40px;
+            position: absolute;
+            left: 50%;
+            margin-left: -14px;
+            animation: pulsing 2s infinite;
+            @media screen and (min-width: 576px) {
+                display: block;
+            }
+            span {
+                display: block;
+                margin: 6px auto;
+                width: 2px;
+                height: 2px;
+                border-radius: 4px;
+                background: $black;
+                border: 1px solid transparent;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-iteration-count: infinite;
+                animation-name: scroll;
+            }
+        }
+        @keyframes pulsing {
+            0% {
+                // transform: scale(0.5, 0.5);
+                opacity: 0.1;
+            }
+            50% {
+                // transform: scale(1.0, 1.0);
+                opacity: 0.9;
+            }
+            100% {
+                // transform: scale(0.5, 0.5);
+                opacity: 0.1;
+            }
+        }
+        @keyframes scroll {
+            0% {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: translateY(20px);
+                -ms-transform: translateY(20px);
+                transform: translateY(20px);
+            }
         }
     }
-    &__mouse {
-        display: block;
-        margin: 0 auto;
-        width: 26px;
-        height: 46px;
-        border-radius: 13px;
-        border: 2px solid $black;
-        bottom: 40px;
-        position: absolute;
-        left: 50%;
-        margin-left: -14px;
-        span {
-            display: block;
-            margin: 6px auto;
-            width: 2px;
-            height: 2px;
-            border-radius: 4px;
-            background: $black;
-            border: 1px solid transparent;
-            animation-duration: 1s;
-            animation-fill-mode: both;
-            animation-iteration-count: infinite;
-            animation-name: scroll;
-        }
-    }
-    @-webkit-keyframes scroll {
-        0% {
-            opacity: 1;
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-        100% {
-            opacity: 0;
-            -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-        }
-    }
-    @keyframes scroll {
-        0% {
-            opacity: 1;
-            -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
-            transform: translateY(0);
-        }
-        100% {
-            opacity: 0;
-            -webkit-transform: translateY(20px);
-            -ms-transform: translateY(20px);
-            transform: translateY(20px);
-        }
-    }
-}
