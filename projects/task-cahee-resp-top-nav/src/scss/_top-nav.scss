@@ -1,0 +1,132 @@
+$style: "top-nav";
+.#{$style} {
+    display: block;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    position: absolute;
+    left: 40%;
+    top: 44px;
+    .navicon {
+        width: 100%;
+        // background: transparent;
+        margin: 0 auto 20px;
+        position: relative;
+        height: 30px;
+        width: 50px;
+        display: block;
+        z-index: 99;
+        transition: linear 0.5s all;
+        &:before,
+        &:after {
+            background: $black;
+            backface-visibility: hidden;
+            content: "";
+            height: 3px;
+            left: 0;
+            transition: 0.8s ease;
+            width: 45px;
+        }
+        &:before {
+            box-shadow: $black 0 14px 0 0;
+            position: absolute;
+            top: 0;
+        }
+        &:after {
+            position: absolute;
+            top: 28px;
+        }
+        &--active {
+            // margin-top: 20px;
+            transition: linear 0.5s all;
+            &:before {
+                box-shadow: transparent 0 0 0 0;
+                top: 15px;
+                transform: rotate(225deg);
+            }
+            &:after {
+                top: 15px;
+                transform: rotate(315deg);
+            }
+        }
+    }
+    .toggle {
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        // padding: 15px;
+        display: block;
+        // opacity: 0;
+        transition: ease-in 0.5s all;
+        transform: translateY(-250%);
+        min-width: 320px;
+        &--active {
+            display: block;
+            opacity: 1;
+            transition: ease-in 0.5s all;
+            transform: translateY(0);
+        }
+        &__menu {
+            // margin-bottom: 25px;
+            li {
+                display: block;
+                margin: 0 auto 10px;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 250px;
+                    height: 3px;
+                    background: linear-gradient(to right, rgba(239, 177, 177, 1) 1%, rgba(247, 43, 59, 1) 48%, rgba(247, 43, 59, 1) 54%, rgba(247, 43, 59, 1) 59%, rgba(247, 43, 59, 1) 59%, rgba(239, 177, 177, 1) 100%);
+                    transform: translateX(-125px);
+                    left: 50%;
+                    top: -7px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:first-child {
+                    &::before {
+                        display: none;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    display: block;
+                    text-align: center;
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    transition: linear 0.5s all;
+                    font-weight: 700;
+                    padding: 5px 0;
+                    &:hover {
+                        color: $col-btn;
+                    }
+                }
+            }
+        }
+    }
+    .social {
+        display: block;
+        width: 70%;
+        margin: 25px auto;
+        text-align: center;
+        font-size: 0;
+        li {
+            display: inline-block;
+            width: 25%;
+            text-align: center;
+            a {
+                text-align: center;
+                color: #000;
+                font-size: 25px;
+                transition: linear 0.5s all;
+                &:hover {
+                    color: #db5523;
+                    transition: linear 0.5s all;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import "vars";
+@import "mixins";
+@import "common";
+@import "./start-page";
+@import "./_about-us";
+@import "./our-services";
+@import "./gallery";
+@import "./subscribe";
+@import "./blog";
+@import "./contact";
+@import "./footer";
+@import "./top-nav";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700;900&display=swap');
+.title {
+    font-size: $logo-fsz;
+    text-align: center;
+    margin-bottom: 20px;
+    @media screen and (min-width: 576px) {
+        font-size: $title-fsz;
+    }
+}
