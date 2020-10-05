@@ -36,20 +36,29 @@ $style: "card-team";
         }
     }
     &__card-wrapper {
-        @include flex(space-between);
+        @include flex (start, center, column);
         position: relative;
-        &:before {
-            content: '';
-            width: 2px;
-            height: 100%;
-            background-color: $team-color;
-            display: inline-block;
-            position: absolute;
-            right: 50%;
+        @media screen and (min-width: 576px) {
+            @include flex(space-between);
+            &:before {
+                content: '';
+                width: 2px;
+                height: 100%;
+                background-color: $team-color;
+                display: inline-block;
+                position: absolute;
+                right: 50%;
+            }
         }
     }
     &__card-wrapper-item {
-        width: calc(100% / 2);
-        min-height: 561px;
+        width: calc((100% / 12) * 5);
+        min-height: 200px;
+        @media screen and (min-width: 576px) {
+            min-height: 561px;
+        }
+        @media screen and (min-width: 992px) {
+            width: calc((100% / 12) * 6);
+        }
     }
 }

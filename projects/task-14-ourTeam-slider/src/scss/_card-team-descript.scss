@@ -1,6 +1,7 @@
 $style: "card-team-descript";
 .#{$style} {
     @include flex(center, center, column);
+    text-align: center;
     span {
         display: block;
     }

@@ -1,6 +1,10 @@
     $style: "photo-wrap";
     .#{$style} {
         @include flex(center, center);
+        padding: 0 30px;
+        text-align: center;
+        @media screen and (min-width: 768px) {}
+        @media screen and (min-width: 992px) {}
         &__inner {
             display: flex;
             position: relative;
