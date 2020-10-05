@@ -4,6 +4,7 @@ $style: "card-team";
         @include flex(center, center, column);
         padding-top: 30px;
         margin-bottom: 15px;
+        text-align: center;
     }
     &__header-subtitle {
         @include text($midle-fsz, 400, $title-color);
@@ -20,7 +21,7 @@ $style: "card-team";
         &::before,
         &::after {
             content: '';
-            width: 212px;
+            width: 50px;
             height: 2px;
             position: absolute;
             background-color: $team-color;
@@ -33,6 +34,25 @@ $style: "card-team";
         }
         &::after {
             left: 30px;
+        }
+        @media screen and (min-width: 576px) {
+            &::before,
+            &::after {
+                content: '';
+                width: 212px;
+                height: 2px;
+                position: absolute;
+                background-color: $team-color;
+                display: inline-block;
+                bottom: 50%;
+                transform: translateY(-1px);
+            }
+            &::before {
+                right: 30px;
+            }
+            &::after {
+                left: 30px;
+            }
         }
     }
     &__card-wrapper {
