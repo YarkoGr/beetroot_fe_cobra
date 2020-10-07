@@ -71,7 +71,7 @@ a {
     padding-left: 0;
     margin-right: 12px;
     transform: translateX(5px);
-     :last-child {
+    &:last-child {
         margin-right: 0;
     }
 }
