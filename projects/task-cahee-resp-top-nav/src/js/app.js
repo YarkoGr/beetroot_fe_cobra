@@ -3,3 +3,5 @@ $('.navicon').on('click', function(e) {
     $(this).toggleClass('navicon--active');
     $('.toggle').toggleClass('toggle--active');
 });
+
+AOS.init();

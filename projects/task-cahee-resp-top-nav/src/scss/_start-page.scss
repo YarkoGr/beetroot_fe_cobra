@@ -12,6 +12,7 @@
             }
         }
         &__header {
+            z-index: 10;
             position: fixed;
             top: 10px;
             right: 50px;
@@ -144,4 +145,7 @@
                 transform: translateY(20px);
             }
         }
+        // &__mouse-link {
+        //     display: inline-block;
+        // }
     }
