@@ -48,14 +48,20 @@ a {
 }
 
 .btn-main {
+    display: inline-block;
+    text-decoration: none;
     @include text($btn-fsz, 300);
     font-family: $ff-raleway;
-    padding: 0 43px;
-    min-height: 55px;
+    padding: 25px 43px;
     cursor: pointer;
     border: none;
     outline: none;
     box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.42);
+    &:hover {
+        background-color: $white;
+        margin-top: -2px;
+        transition: background-color 0.8s ease;
+    }
 }
 
 // @media screen and (min-width: 576px) {}

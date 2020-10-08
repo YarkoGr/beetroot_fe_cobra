@@ -67,9 +67,9 @@ $style: "contact";
     }
     &__btn {
         background-color: $col-05;
-        transition: transform 0.3s ease;
         &:hover {
-            transform: scale(0.95);
+            @include text ($btn-fsz, 700, $col-05);
+            margin: 0;
         }
     }
     &__contact-data {

@@ -3,10 +3,6 @@ $style: "subscribe";
     background: url(../img/subscribe.png) no-repeat center;
     background-size: cover;
     padding: 145px 0 163px;
-    text-align: center;
-    @media screen and (min-width: 768px) {
-        text-align: left;
-    }
     &__title {
         @include text($subtitle-fsz, 700, $black);
         margin-bottom: 34px;
@@ -18,9 +14,16 @@ $style: "subscribe";
         line-height: 1.59;
         margin-bottom: 31px;
     }
+    &__form {
+        display: block;
+        @media screen and (min-width: 992px) {
+            display: flex;
+        }
+    }
     &__input {
+        font-size: 20px;
         margin-bottom: 20px;
-        padding: 19px 0 16px 15px;
+        padding: 23px 0 23px 15px;
         @media screen and (min-width: 576px) {
             min-width: 500px;
         }
@@ -37,8 +40,8 @@ $style: "subscribe";
         }
     }
     &__btn {
+        display: block;
         background-color: $col-btn-02;
-        transition: 0.2s ease;
         &:hover {
             background-color: $white;
             border: 1px solid $col-btn-02;

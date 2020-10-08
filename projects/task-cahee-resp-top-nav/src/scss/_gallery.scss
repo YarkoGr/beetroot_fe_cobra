@@ -100,9 +100,8 @@ $style: "gallery";
     }
     &__btn {
         background-color: $col-btn-01;
-        transition: 0.3s ease;
+        padding: 20px 43px;
         &:hover {
-            background-color: $white;
             border: 1px solid $col-btn-01;
             color: $col-btn-01;
         }

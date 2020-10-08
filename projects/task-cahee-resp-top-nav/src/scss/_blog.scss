@@ -79,7 +79,7 @@ $style: "blog";
     }
     &__btn {
         background-color: $col-btn-03;
-        transition: 0.3s ease;
+        padding: 20px 43px;
         &:hover {
             background-color: $white;
             border: 1px solid $col-btn-03;
