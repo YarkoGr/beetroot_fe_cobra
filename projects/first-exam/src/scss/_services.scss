@@ -1,0 +1,37 @@
+$style: "services";
+.#{$style} {
+    background-color: $dark-grey;
+    &__wrapper {
+        padding: 100px 0 119px;
+        @include flex (space-around);
+        position: relative;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            width: 319px;
+            height: 178px;
+            border-radius: 160px/90px;
+            border-top: 2px dotted $placeholder-color;
+        }
+        &:before {
+            top: 22px;
+            left: 52%;
+        }
+        &:after {
+            top: 22px;
+            right: 53%;
+        }
+    }
+    &__wrapper-inner {
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+    &__wrapper-inner-icon {
+        margin-bottom: 31px;
+    }
+    &__wrapper-inner-title {
+        @include text($H360);
+        font-family: $aleo;
+    }
+}

@@ -1,0 +1,42 @@
+$style: "who-we-are";
+.#{$style} {
+    background: url(../img/backgraunds/bg2.png) no-repeat center;
+    background-size: cover;
+    // @include flex();
+    &__wrapper {
+        padding: 120px 0 120px;
+        @include flex(space-between, center);
+    }
+    &__wrapper-col {
+        width: calc((100% / 12) * 6 - 50px);
+    }
+    &__col-title {
+        @include text ($H360);
+        font-family: $aleo;
+        margin-bottom: 62px;
+    }
+    &__col-text {
+        max-width: 530px;
+        display: block;
+        color: $white;
+        letter-spacing: 1.6px;
+        line-height: 1.63;
+        margin-bottom: 40px;
+    }
+    &__col-img-wrap {
+        display: flex;
+        position: relative;
+        max-width: 350px;
+        min-height: 220px;
+        &--right {
+            margin-left: 125px;
+        }
+        img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            @include position();
+        }
+    }
+}

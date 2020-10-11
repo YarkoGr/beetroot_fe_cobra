@@ -1,0 +1,30 @@
+$style: "bhromaon-footer";
+.#{$style} {
+    background-color: $footer-bg;
+    &__wrapper {
+        padding: 120px 0 53px;
+        text-align: center;
+    }
+    &__link {
+        @include text($H240, 700);
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+    &__title {
+        @include text($H60);
+        margin-bottom: 31px;
+    }
+    &__social {
+        @include flex(center);
+        list-style: none;
+    }
+    &__social-item:not(:last-child) {
+        margin-right: 24px;
+        &:nth-of-type(3) a {
+            color: $main-color;
+        }
+    }
+    &__social-item-link {
+        color: $white;
+    }
+}
