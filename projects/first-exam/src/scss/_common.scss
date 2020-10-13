@@ -20,6 +20,8 @@ a {
 .container {
     max-width: 1110px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .btn {
@@ -34,5 +36,28 @@ a {
     transition: transform 0.3s ease;
     &:hover {
         transform: scale(0.9);
+    }
+}
+
+.main-description {
+    width: 50%;
+    padding: 50px 30px;
+    background-color: $card-bg;
+    .main-description-name {
+        display: block;
+        @include text($H200);
+        letter-spacing: 1.5px;
+        margin-bottom: 30px;
+    }
+    .main-description-title {
+        @include text($H200);
+        text-transform: uppercase;
+        margin-bottom: 29px;
+    }
+    .main-description-text {
+        display: block;
+        color: $white;
+        margin-bottom: 48px;
+        line-height: 1.63;
     }
 }

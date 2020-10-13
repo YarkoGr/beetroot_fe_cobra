@@ -3,7 +3,8 @@ $style: "contact-us";
     background: url(../img/backgraunds/bg5.png) no-repeat center;
     background-size: cover;
     &__wrapper {
-        padding: 120px 0 200px;
+        padding-top: 120px;
+        padding-bottom: 200px;
     }
     &__title {
         text-align: center;
@@ -15,20 +16,12 @@ $style: "contact-us";
         @include flex();
     }
     &__descript-img {
-        display: flex;
-        position: relative;
-        min-width: 445px;
-        min-height: 284px;
-        img {
-            position: absolute;
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            @include position();
-        }
+        @include padding-hack (36.3%, cover);
+        min-width: 35%;
     }
     &__descript-inner {
         padding: 50px 54px 48px 60px;
+        background-color: $card-bg;
     }
     &__descript-inner-name {
         display: block;

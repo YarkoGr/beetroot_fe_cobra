@@ -20,11 +20,12 @@ $style: "bhromaon-footer";
     }
     &__social-item:not(:last-child) {
         margin-right: 24px;
-        &:nth-of-type(3) a {
-            color: $main-color;
-        }
     }
     &__social-item-link {
         color: $white;
+        transition: color 0.3s ease;
+        &:hover {
+            color: $main-color;
+        }
     }
 }
