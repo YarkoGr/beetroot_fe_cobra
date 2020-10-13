@@ -2,7 +2,8 @@ $style: "subscribe";
 .#{$style} {
     background: url(../img/subscribe.png) no-repeat center;
     background-size: cover;
-    padding: 145px 0 163px;
+    padding-top: 145px;
+    padding-bottom: 163px;
     &__title {
         @include text($subtitle-fsz, 700, $black);
         margin-bottom: 34px;
@@ -21,11 +22,11 @@ $style: "subscribe";
         }
     }
     &__input {
-        font-size: 20px;
         margin-bottom: 20px;
         padding: 23px 0 23px 15px;
         @media screen and (min-width: 576px) {
             min-width: 500px;
+            font-size: 20px;
         }
         @media screen and (min-width: 768px) {
             min-width: 570px;

@@ -2,7 +2,8 @@ $style: "gallery";
 .#{$style} {
     background-color: $col-04;
     &__wrapper {
-        padding: 100px 0 140px;
+        padding-top: 100px;
+        padding-bottom: 140px;
         text-align: center;
     }
     &__title {

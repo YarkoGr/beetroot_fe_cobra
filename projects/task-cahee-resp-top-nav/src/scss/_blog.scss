@@ -2,7 +2,8 @@ $style: "blog";
 .#{$style} {
     background-color: $col-06;
     &__wrapper {
-        padding: 100px 0 120px;
+        padding-top: 100px;
+        padding-bottom: 120px;
         text-align: center;
     }
     &__title {

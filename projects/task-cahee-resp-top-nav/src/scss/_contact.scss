@@ -3,7 +3,8 @@ $style: "contact";
     background: url(../img/contact.png) no-repeat center;
     background-size: cover;
     &__wrapper {
-        padding: 101px 0 120px;
+        padding-top: 101px;
+        padding-bottom: 120px;
     }
     &__title {
         @include text($title-fsz, 700, $black);

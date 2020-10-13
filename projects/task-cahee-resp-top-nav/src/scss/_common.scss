@@ -18,12 +18,8 @@ a {
 
 .container {
     margin: 0 auto;
-    @media screen and (min-width: 280px) {
-        max-width: 250px;
-    }
-    @media screen and (min-width: 350px) {
-        max-width: 320px;
-    }
+    padding-left: 15px;
+    padding-right: 15px;
     @media screen and (min-width: 576px) {
         max-width: 540px;
     }

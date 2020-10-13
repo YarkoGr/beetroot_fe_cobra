@@ -2,7 +2,8 @@ $style: "our-services";
 .#{$style} {
     background-color: $col-03;
     &__wrapper {
-        padding: 50px 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
         @include flex(space-around, center, column-reverse);
         background-image: url(../img/services.png);
         background-repeat: no-repeat;
