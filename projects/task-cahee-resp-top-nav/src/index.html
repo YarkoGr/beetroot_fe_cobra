@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -100,25 +101,25 @@
     <section class="our-services" id="services">
         <div class="our-services__wrapper container">
             <ul class="our-services__list">
-                <li class="our-services__list-item">
+                <li class="our-services__list-item" data-aos="fade-right">
                     <a href="#" class="our-services__list-item-link">
                         <span class="our-services__list-item-link-text">Online Shopping</span>
                         <i class="fas fa-carrot our-services__list-item-link-icon"></i>
                     </a>
                 </li>
-                <li class="our-services__list-item">
+                <li class="our-services__list-item" data-aos="fade-left" data-aos-duration="2000">
                     <a href="#" class="our-services__list-item-link">
                         <span class="our-services__list-item-link-text">Quality Product</span>
                         <i class="fas fa-shopping-cart our-services__list-item-link-icon"></i>
                     </a>
                 </li>
-                <li class="our-services__list-item">
+                <li class="our-services__list-item" data-aos="fade-right">
                     <a href="#" class="our-services__list-item-link">
                         <span class="our-services__list-item-link-text">Domestic & International Delivery</span>
                         <i class="fab fa-pagelines our-services__list-item-link-icon"></i>
                     </a>
                 </li>
-                <li class="our-services__list-item">
+                <li class="our-services__list-item" data-aos="fade-left" data-aos-duration="2000">
                     <a href="#" class="our-services__list-item-link">
                         <span class="our-services__list-item-link-text">Well Organized</span>
                         <i class="fab fa-battle-net our-services__list-item-link-icon"></i>
@@ -137,23 +138,23 @@
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </span>
             <div class="gallery__row">
-                <div class="gallery__row-big-foto">
+                <div class="gallery__row-big-foto" data-aos="flip-left">
                     <img src="./img/gallery/gallery-big.png" alt="gallery foto" />
                 </div>
                 <div class="gallery__row-inner">
-                    <div class="gallery__small-foto">
+                    <div class="gallery__small-foto" data-aos="flip-down" data-aos-delay="50" data-aos-duration="1000">
                         <img src="./img/gallery/gallery-sm-1.png" alt="gallery foto" />
                     </div>
-                    <div class="gallery__small-foto">
+                    <div class="gallery__small-foto" data-aos="flip-down" data-aos-delay="50" data-aos-duration="1000">
                         <img src="./img/gallery/gallery-sm-2.png" alt="gallery foto" />
                     </div>
                 </div>
             </div>
             <div class="gallery__row">
-                <div class="gallery__midle-foto">
+                <div class="gallery__midle-foto" data-aos="zoom-in-right">
                     <img src="./img/gallery/gallery-mid-1.png" alt="gallery foto" />
                 </div>
-                <div class="gallery__midle-foto">
+                <div class="gallery__midle-foto" data-aos="zoom-in-left" data-aos-delay="50" data-aos-duration="1000">
                     <img src="./img/gallery/gallery-mid-2.png" alt="gallery foto" />
                 </div>
             </div>
@@ -183,7 +184,7 @@
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                 velit.</span>
             <div class="blog__row">
-                <div class="blog__row-card">
+                <div class="blog__row-card" data-aos="zoom-out-right" data-aos-duration="1000">
                     <a href="#">
                         <img src="./img/blog/blog-1.png" alt="blog image1">
                         <div class="blog__row-card-date">
@@ -196,7 +197,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="blog__row-card">
+                <div class="blog__row-card" data-aos="zoom-out-left" data-aos-delay="50" data-aos-duration="1000">
                     <a href="#">
                         <img src="./img/blog/blog-2.png" alt="blog image2">
                         <div class="blog__row-card-date">
@@ -209,7 +210,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="blog__row-card">
+                <div class="blog__row-card" data-aos="zoom-out-right" data-aos-duration="1000">
                     <a href="#">
                         <img src="./img/blog/blog-3.png" alt="blog image3">
                         <div class="blog__row-card-date">
@@ -259,6 +260,8 @@
             <span>Made with <span class="footer__color">love</span> by Auskteez</span>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="js/bundle.js"></script>
 </body>
