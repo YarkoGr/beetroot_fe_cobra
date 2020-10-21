@@ -7,3 +7,4 @@ $('.navicon').on('click', function(e) {
 
 
 AOS.init();
+
