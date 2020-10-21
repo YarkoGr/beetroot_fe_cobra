@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
 }
 
 html,
@@ -19,8 +20,8 @@ a {
 
 .container {
     margin: 0 auto;
-    max-width: 540px;
-    font-family: "Raleway", sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
     @media screen and (min-width: 576px) {
         max-width: 540px;
     }

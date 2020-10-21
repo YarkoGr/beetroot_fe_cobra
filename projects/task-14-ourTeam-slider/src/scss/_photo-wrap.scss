@@ -6,16 +6,7 @@
         @media screen and (min-width: 768px) {}
         @media screen and (min-width: 992px) {}
         &__inner {
-            display: flex;
             position: relative;
-            max-width: 390px;
-            max-height: 390px;
-            img {
-                position: relative;
-                @include position();
-                object-fit: cover;
-                border: 1px solid $team-color;
-            }
             &::before,
             &::after {
                 content: '';
@@ -37,7 +28,8 @@
         }
         &__inner-bottom-corners {
             display: flex;
-            position: relative;
+            min-width: 388px;
+            @include padding-hack(100%, cover);
             &::before,
             &::after {
                 content: '';
@@ -56,6 +48,9 @@
             &::after {
                 right: -14px;
                 transform: rotate(180deg);
+            }
+            img {
+                border: 1px solid $team-color;
             }
         }
     }

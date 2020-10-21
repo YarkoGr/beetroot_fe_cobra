@@ -14,6 +14,7 @@ $style: "card-team";
         @include text($big-fsz, 700, $team-color);
         font-family: $font-roboto;
         margin-bottom: 45px;
+        margin-top: 0;
     }
     &__team-logo {
         display: flex;
@@ -39,7 +40,7 @@ $style: "card-team";
             &::before,
             &::after {
                 content: '';
-                width: 212px;
+                min-width: 212px;
                 height: 2px;
                 position: absolute;
                 background-color: $team-color;
