@@ -1,0 +1,21 @@
+$style: "header";
+.#{$style} {
+    padding: 17px 58px 29px 56px;
+    @include flex(space-between, center);
+    background-color: rgba(255, 127, 127, 0.5);
+    &__list {
+        @include flex();
+        list-style: none;
+    }
+    &__list-item:not(:last-child) {
+        padding-right: 100px;
+    }
+    &__list-item-link {
+        @include text($h25, 700);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    &__icon {
+        @include text($h25);
+    }
+}

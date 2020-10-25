@@ -1,0 +1,30 @@
+$style: "best-tasty";
+.#{$style} {
+    position: relative;
+    &__wrapper {
+        padding-top: 122px;
+        @include flex (start, center);
+    }
+    &__img-wrap {
+        min-width: 464px;
+        min-height: 464px;
+        @include padding-hack(41%, cover);
+        border: 1px solid $white;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 156px;
+    }
+    &__title {
+        color: $main-color;
+        margin-bottom: 59px;
+    }
+    &__subtitle {
+        color: $main-color;
+        margin-bottom: 73px;
+        display: block;
+        max-width: 322px;
+    }
+    &__wawe {
+        position: relative;
+    }
+}

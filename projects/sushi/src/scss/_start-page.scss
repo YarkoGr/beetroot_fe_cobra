@@ -1,0 +1,88 @@
+$style: "start-page";
+.#{$style} {
+    background: url(../img/bg1.png) no-repeat center;
+    background-size: cover;
+    min-height: 1350px;
+    &__wrapper {
+        padding-top: 138px;
+        @include flex(start, start, column);
+    }
+    &__wrapper-main-title {
+        @include text($h75, 700);
+        text-transform: uppercase;
+        margin-bottom: 42px;
+    }
+    &__wrapper-main-subtitle {
+        display: block;
+        @include text($h30);
+        margin-bottom: 52px;
+        max-width: 612px;
+    }
+    &__wrapper-main-button {
+        background-color: $white;
+        color: $main-color;
+        border: 2px solid $white;
+        transition: background-color 0.5s ease-in;
+        transition: color 0.5s ease-in-out;
+        &:hover {
+            background-color: $main-color;
+            color: $white;
+        }
+    }
+    &__sub-wrapper {
+        padding-top: 330px;
+        @include flex(center, center, column);
+        position: relative;
+    }
+    &__sub-wrapper-title {
+        margin-bottom: 50px;
+        z-index: 1;
+        transform: translateY(280px);
+    }
+    &__sub-wrapper-wave {
+        width: 100%;
+        max-height: 500px;
+        position: relative;
+        top: 6px;
+        z-index: 0;
+    }
+    &__sub-wrapper-backgraund {
+        background-color: $main-color;
+        width: 100%;
+        @include flex(center, center, column);
+        text-align: center;
+    }
+    &__sub-wrapper-subtitle {
+        display: block;
+        @include text($h25);
+        max-width: 700px;
+        margin-bottom: 84px;
+    }
+    &__sub-wrapper-list {
+        @include flex(center, center);
+    }
+    &__sub-wrapper-list-item {
+        max-width: 237px;
+        margin-right: 141px;
+        &:last-child {
+            margin-right: 0;
+        }
+        padding-bottom: 28px;
+    }
+    &__sub-wrapper-list-link {
+        @include flex(stretch, center, column);
+    }
+    &__sub-wrapper-list-link-img {
+        min-width: 205px;
+        @include padding-hack(86%, cover);
+        margin-bottom: 41px;
+    }
+    &__sub-wrapper-list-link-title {
+        @include text($h28, 700);
+        margin-bottom: 27px;
+    }
+    &__sub-wrapper-list-link-subtitle {
+        @include text($h17);
+        display: block;
+    }
+}
