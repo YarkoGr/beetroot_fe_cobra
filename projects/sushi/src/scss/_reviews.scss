@@ -1,0 +1,40 @@
+$style: "reviews";
+.#{$style} {
+    background-color: $main-color;
+    position: relative;
+    mix-blend-mode: multiply;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: url(../img/bg2.png) no-repeat center;
+        background-size: cover;
+        mix-blend-mode: multiply;
+        opacity: 0.4;
+    }
+    &__wrapper {
+        padding-top: 241px;
+        padding-bottom: 219px;
+        @include flex(center, center, column);
+    }
+    &__img-wrap {
+        min-width: 242px;
+        @include padding-hack (21.4%, cover);
+        margin-bottom: 48px;
+    }
+    &__text {
+        max-width: 819px;
+        display: block;
+        text-align: center;
+        @include text($h30);
+        margin-bottom: 42px;
+    }
+    &__name {
+        display: block;
+        @include text($h45, 700);
+    }
+}

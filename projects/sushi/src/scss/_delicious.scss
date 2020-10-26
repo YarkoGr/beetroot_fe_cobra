@@ -1,9 +1,9 @@
-$style: "best-tasty";
+$style: "delicious";
 .#{$style} {
-    position: relative;
     &__wrapper {
-        padding-top: 122px;
-        @include flex (start, center);
+        padding-top: 193px;
+        padding-bottom: 143px;
+        @include flex (center, center);
     }
     &__img-wrap {
         min-width: 464px;
@@ -12,6 +12,8 @@ $style: "best-tasty";
         border: 1px solid $white;
         border-radius: 50%;
         overflow: hidden;
+    }
+    &__descript {
         margin-right: 156px;
     }
     &__title {
@@ -26,8 +28,5 @@ $style: "best-tasty";
     }
     &__btn {
         max-width: 322px;
-    }
-    &__wawe {
-        transform: translateY(5px);
     }
 }
