@@ -1,0 +1,16 @@
+@import "vars";
+@import "mixins";
+@import "common";
+@import "./cart";
+@import "./shopping-list";
+.container {
+    width: 500px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 5px 3px 2px #556;
+}
